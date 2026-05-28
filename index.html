@@ -1,127 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar Theory Bootcamp - Learn Music Theory in One Month</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guitar Theory Bootcamp — Master Music Theory in 30 Days</title>
+  <meta name="description" content="Learn guitar music theory from scratch in one month. Visual lessons, 50+ exercises, and everything connected to real guitar playing.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1 class="logo">🎸 Guitar Theory Bootcamp</h1>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="pages/lessons.html">Lessons</a></li>
-                <li><a href="pages/practice.html">Exercises</a></li>
-                <li><a href="pages/reference.html">Reference</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <main class="hero-section">
-        <div class="hero-content">
-            <h2>Learn Music Theory for Guitar</h2>
-            <p class="subtitle">An Elementary School-Level Guide<br>Complete in Less Than One Month</p>
-            
-            <div class="quick-stats">
-                <div class="stat-box">
-                    <h3>4 Weeks</h3>
-                    <p>Complete curriculum</p>
-                </div>
-                <div class="stat-box">
-                    <h3>7 Modules</h3>
-                    <p>Bite-sized lessons</p>
-                </div>
-                <div class="stat-box">
-                    <h3>50+ Exercises</h3>
-                    <p>With answers</p>
-                </div>
+<div id="scroll-progress"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="logo">
+      <span class="logo-icon">🎸</span>
+      <span class="logo-text">Guitar Theory <span class="logo-accent">Bootcamp</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="pages/lessons.html">Lessons</a></li>
+      <li><a href="pages/practice.html">Exercises</a></li>
+      <li><a href="pages/reference.html">Reference</a></li>
+      <li><a href="pages/lessons.html" class="nav-cta">Start Learning</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+    <div class="hero-orb orb-3"></div>
+    <div class="string-lines">
+      <div class="string-line"></div>
+      <div class="string-line"></div>
+      <div class="string-line"></div>
+      <div class="string-line"></div>
+      <div class="string-line"></div>
+      <div class="string-line"></div>
+    </div>
+    <div class="floating-notes">
+      <span class="floating-note">♩</span>
+      <span class="floating-note">♪</span>
+      <span class="floating-note">♫</span>
+      <span class="floating-note">♬</span>
+      <span class="floating-note">🎵</span>
+    </div>
+  </div>
+
+  <div class="hero-content" id="heroContent">
+    <div class="hero-badge" id="heroBadge">
+      <span>🎸</span> Free Guitar Theory Curriculum
+    </div>
+    <h1 class="hero-title" id="heroTitle">
+      Master Music Theory<br>
+      <span class="gradient-text">in 30 Days</span>
+    </h1>
+    <p class="hero-subtitle" id="heroSubtitle">
+      Elementary concepts. Zero fluff. Everything connected to real guitar playing.
+      Four weeks, seven modules, fifty exercises — and you're done.
+    </p>
+
+    <div class="hero-stats" id="heroStats">
+      <div class="stat-card">
+        <span class="stat-number">4</span>
+        <span class="stat-label">Weeks</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">7</span>
+        <span class="stat-label">Modules</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number">50+</span>
+        <span class="stat-label">Exercises</span>
+      </div>
+    </div>
+
+    <div class="hero-actions" id="heroActions">
+      <a href="pages/lessons.html" class="btn btn-primary">Start Learning →</a>
+      <a href="pages/reference.html" class="btn btn-secondary">Quick Reference</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL LEARN -->
+<section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-header center" data-aos="fade-up">
+      <span class="section-label">Curriculum</span>
+      <h2 class="section-title">Your 4-Week Journey</h2>
+      <p class="section-subtitle">Each week builds on the last. By the end, you'll hear music differently.</p>
+    </div>
+
+    <div class="learn-grid">
+      <div class="learn-card" data-aos="fade-up" data-aos-delay="0">
+        <span class="week-badge badge-purple">Week 1</span>
+        <span class="learn-icon">🎵</span>
+        <h3 class="learn-title">The Foundation</h3>
+        <p class="learn-description">Learn the 12 notes of the musical alphabet and exactly where they live on your fretboard. By Friday you can identify any note on any string — instantly.</p>
+      </div>
+      <div class="learn-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="week-badge badge-amber">Week 2</span>
+        <span class="learn-icon">📏</span>
+        <h3 class="learn-title">Intervals & Scales</h3>
+        <p class="learn-description">Understand the distance between notes, then use that knowledge to build major and minor scales. Every song ever written lives inside these patterns.</p>
+      </div>
+      <div class="learn-card" data-aos="fade-up" data-aos-delay="0">
+        <span class="week-badge badge-cyan">Week 3</span>
+        <span class="learn-icon">🎼</span>
+        <h3 class="learn-title">Chords & Harmony</h3>
+        <p class="learn-description">Build major and minor chords from scratch. Learn which chords naturally want to follow others. Analyze why your favorite songs feel the way they do.</p>
+      </div>
+      <div class="learn-card" data-aos="fade-up" data-aos-delay="100">
+        <span class="week-badge badge-green">Week 4</span>
+        <span class="learn-icon">🚀</span>
+        <h3 class="learn-title">Mastery & Beyond</h3>
+        <p class="learn-description">Read sheet music, analyze song structure, and tie everything together. Final milestone: pass the music theory assessment and understand any song you hear.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THIS WORKS -->
+<section class="section features-section">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center;">
+      <div data-aos="fade-right">
+        <span class="section-label">Methodology</span>
+        <h2 class="section-title">Built for guitar players, not music students</h2>
+        <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 2rem;">
+          Traditional music theory is taught in a vacuum. This bootcamp connects every concept directly to tab, frets, and chord shapes you already know.
+        </p>
+        <ul class="feature-list">
+          <li class="feature-item">
+            <div class="feature-icon-wrap icon-amber">🎸</div>
+            <div class="feature-text">
+              <h4>Tab-First Approach</h4>
+              <p>Every concept connects to guitar tablature you already understand — no piano required.</p>
             </div>
-
-            <button class="cta-button" onclick="window.location.href='pages/lessons.html'">
-                Start Learning →
-            </button>
-        </div>
-    </main>
-
-    <section class="info-section">
-        <div class="container">
-            <h2>What You'll Learn</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>🎵 Week 1: The Basics</h3>
-                    <p><strong>The Musical Alphabet:</strong> Learn the 12 notes and where they live on your guitar</p>
-                </div>
-                <div class="card">
-                    <h3>🏗️ Week 2: Building Blocks</h3>
-                    <p><strong>Intervals & Scales:</strong> Understand how notes relate to each other</p>
-                </div>
-                <div class="card">
-                    <h3>🎼 Week 3: Making Music</h3>
-                    <p><strong>Chords & Harmony:</strong> Learn what makes notes sound good together</p>
-                </div>
-                <div class="card">
-                    <h3>🚀 Week 4: Next Level</h3>
-                    <p><strong>Song Analysis & Beyond:</strong> Read sheet music and understand song structure</p>
-                </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon-wrap icon-purple">👁️</div>
+            <div class="feature-text">
+              <h4>Visual Diagrams</h4>
+              <p>Every concept has a fretboard diagram or visual. See it, understand it, play it.</p>
             </div>
-        </div>
-    </section>
-
-    <section class="features-section">
-        <div class="container">
-            <h2>Why This Works</h2>
-            <ul class="features-list">
-                <li>✅ <strong>Tab-Based:</strong> Everything connects to guitar tabs you already know</li>
-                <li>✅ <strong>Visual:</strong> Every concept has a diagram or interactive tool</li>
-                <li>✅ <strong>Practical:</strong> Every lesson includes a real example you can play</li>
-                <li>✅ <strong>Simple:</strong> Written for someone with zero music knowledge</li>
-                <li>✅ <strong>Practice-Heavy:</strong> 50+ exercises with instant feedback</li>
-                <li>✅ <strong>Quick:</strong> Each lesson takes 15-30 minutes</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="timeline-section">
-        <div class="container">
-            <h2>Your 4-Week Path</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">Week 1</div>
-                    <div class="timeline-content">
-                        <h4>The Foundation</h4>
-                        <p>Learn the 12 notes, the musical alphabet, and where everything is on the fretboard. By Friday: you can identify any note on the fretboard.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">Week 2</div>
-                    <div class="timeline-content">
-                        <h4>Intervals & Scales</h4>
-                        <p>Understand the distance between notes. Learn major and minor scales. By Friday: you can play a major scale and understand its pattern.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">Week 3</div>
-                    <div class="timeline-content">
-                        <h4>Chords & Harmony</h4>
-                        <p>Learn how to build major and minor chords. Understand why certain chords go together. By Friday: you can analyze a song's chord progression.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker">Week 4</div>
-                    <div class="timeline-content">
-                        <h4>Mastery & Beyond</h4>
-                        <p>Read sheet music. Analyze songs. Apply theory to real music. Final test: pass the music theory assessment.</p>
-                    </div>
-                </div>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon-wrap icon-cyan">⚡</div>
+            <div class="feature-text">
+              <h4>15–30 Min Lessons</h4>
+              <p>Bite-sized lessons that fit into real life. No marathon study sessions needed.</p>
             </div>
-        </div>
-    </section>
+          </li>
+          <li class="feature-item">
+            <div class="feature-icon-wrap icon-green">✅</div>
+            <div class="feature-text">
+              <h4>Practice-Heavy</h4>
+              <p>50+ exercises with instant answers. Theory only sticks when you apply it.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-    <footer>
-        <p>&copy; 2024 Guitar Theory Bootcamp. Learn music theory. Master your instrument. 🎸</p>
-    </footer>
+      <div class="features-visual" data-aos="fade-left">
+        <div class="feature-code-block">
+          <div class="code-comment">// The musical alphabet</div>
+          <div><span class="code-key">notes</span> = [<span class="code-string">'C'</span>, <span class="code-string">'C#'</span>, <span class="code-string">'D'</span>, <span class="code-string">'D#'</span>, <span class="code-string">'E'</span>, ...]</div>
+          <div>&nbsp;</div>
+          <div class="code-comment">// Major scale formula</div>
+          <div><span class="code-key">major</span> = <span class="code-string">'W-W-H-W-W-W-H'</span></div>
+          <div>&nbsp;</div>
+          <div class="code-comment">// Build a chord</div>
+          <div><span class="code-key">C_major</span> = <span class="code-value">root</span> + <span class="code-value">+4</span> + <span class="code-value">+3</span></div>
+          <div><span class="code-comment">// → C, E, G</span></div>
+          <div>&nbsp;</div>
+          <div class="code-comment">// Progression</div>
+          <div><span class="code-key">song</span> = [<span class="code-string">'I'</span>, <span class="code-string">'V'</span>, <span class="code-string">'vi'</span>, <span class="code-string">'IV'</span>]</div>
+          <div><span class="code-comment">// every pop song ever</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="section" style="background: var(--bg-secondary); border-top: 1px solid var(--border);">
+  <div class="container">
+    <div class="section-header center" data-aos="fade-up">
+      <span class="section-label">Roadmap</span>
+      <h2 class="section-title">Your 4-Week Path</h2>
+      <p class="section-subtitle">A structured journey from zero to fluent in one month.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <h4 class="timeline-content-title">The Foundation</h4>
+          <p class="timeline-content-text">Learn the 12 notes, the musical alphabet, and find every note on the fretboard. By Friday: you can identify any note instantly.</p>
+        </div>
+        <div class="timeline-center">
+          <div class="timeline-marker">Week 1</div>
+        </div>
+        <div class="timeline-empty"></div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-empty"></div>
+        <div class="timeline-center">
+          <div class="timeline-marker">Week 2</div>
+        </div>
+        <div class="timeline-content">
+          <h4 class="timeline-content-title">Intervals & Scales</h4>
+          <p class="timeline-content-text">Understand the distance between notes. Learn major and minor scale patterns. By Friday: you can play a major scale on any root.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <h4 class="timeline-content-title">Chords & Harmony</h4>
+          <p class="timeline-content-text">Build major and minor chords from scratch. Understand why certain chords go together. By Friday: you can analyze any song's chord progression.</p>
+        </div>
+        <div class="timeline-center">
+          <div class="timeline-marker">Week 3</div>
+        </div>
+        <div class="timeline-empty"></div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-empty"></div>
+        <div class="timeline-center">
+          <div class="timeline-marker">Week 4</div>
+        </div>
+        <div class="timeline-content">
+          <h4 class="timeline-content-title">Mastery & Beyond</h4>
+          <p class="timeline-content-text">Read sheet music, analyze real songs, put everything together. Final test: pass the music theory assessment with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container">
+    <div data-aos="zoom-in">
+      <span class="section-label">Ready?</span>
+      <h2 class="cta-title">Pick up your guitar.<br><span class="gradient-text">Start today.</span></h2>
+      <p class="cta-subtitle">It takes less than one month. You'll never listen to music the same way again.</p>
+      <div class="hero-actions" style="justify-content: center;">
+        <a href="pages/lessons.html" class="btn btn-primary" style="font-size:1.05rem; padding: 1rem 2.5rem;">Start Module 1 — Free →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">🎸 Guitar Theory <span>Bootcamp</span></div>
+    <p class="footer-text">Learn music theory. Master your instrument. &copy; 2024</p>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  // Scroll progress
+  window.addEventListener('scroll', () => {
+    const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById('scroll-progress').style.width = scrolled + '%';
+  });
+
+  // Nav scroll effect
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
+  });
+
+  // Mobile nav toggle
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  // AOS init
+  AOS.init({ duration: 700, once: true, offset: 60 });
+
+  // GSAP hero entrance
+  gsap.registerPlugin(ScrollTrigger);
+
+  const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+  tl.from('#heroBadge', { y: 20, opacity: 0, duration: 0.6 })
+    .from('#heroTitle', { y: 40, opacity: 0, duration: 0.8 }, '-=0.3')
+    .from('#heroSubtitle', { y: 30, opacity: 0, duration: 0.7 }, '-=0.5')
+    .from('#heroStats .stat-card', { y: 30, opacity: 0, stagger: 0.12, duration: 0.6 }, '-=0.4')
+    .from('#heroActions .btn', { y: 20, opacity: 0, stagger: 0.1, duration: 0.5 }, '-=0.3');
+
+  // Stat counter animation
+  function animateCount(el, target, suffix) {
+    let count = 0;
+    const step = Math.ceil(target / 40);
+    const timer = setInterval(() => {
+      count = Math.min(count + step, target);
+      el.textContent = count + suffix;
+      if (count >= target) clearInterval(timer);
+    }, 40);
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const nums = entry.target.querySelectorAll('.stat-number');
+        const vals = [4, 7, 50];
+        const suffixes = ['', '', '+'];
+        nums.forEach((n, i) => animateCount(n, vals[i], suffixes[i]));
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  const statsEl = document.getElementById('heroStats');
+  if (statsEl) observer.observe(statsEl);
+</script>
 </body>
 </html>

@@ -1,195 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Exercises - Guitar Theory Bootcamp</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Exercises — Guitar Theory Bootcamp</title>
+  <meta name="description" content="50+ practice questions to test your music theory knowledge. Try before you peek.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1 class="logo">🎸 Guitar Theory Bootcamp</h1>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="lessons.html">Lessons</a></li>
-                <li><a href="practice.html" class="active">Exercises</a></li>
-                <li><a href="reference.html">Reference</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <main class="practice-container">
-        <div class="practice-header">
-            <h1>Practice Exercises</h1>
-            <p class="lesson-meta">50+ Questions to Master Music Theory</p>
-        </div>
+<div id="scroll-progress"></div>
 
-        <section class="lesson-content" style="margin-top: 2rem;">
-            <h2>How to Practice</h2>
-            <p>
-                Practice is where theory becomes real. You can read all the lessons you want, but 
-                <strong>understanding only happens when you practice.</strong> Here's how to use these exercises:
-            </p>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="logo">
+      <span class="logo-icon">🎸</span>
+      <span class="logo-text">Guitar Theory <span class="logo-accent">Bootcamp</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="practice.html" class="active">Exercises</a></li>
+      <li><a href="reference.html">Reference</a></li>
+    </ul>
+  </div>
+</nav>
 
-            <ol style="margin: 1rem 0 1rem 2rem; line-height: 2;">
-                <li><strong>Try each question</strong> without looking at the answer</li>
-                <li><strong>Write down your answer</strong> (or at least think it through)</li>
-                <li><strong>Check the answer</strong> — if you got it right, great! If not, look at the explanation</li>
-                <li><strong>Do the next question</strong></li>
-            </ol>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-meta">
+      <span class="meta-chip chip-week">✏️ 50+ Questions</span>
+      <span class="meta-chip chip-time">All Modules</span>
+    </div>
+    <h1 class="page-title" id="pageTitle">Practice<br><span class="gradient-text">Exercises</span></h1>
+    <p class="page-description">Theory only becomes real when you test it. Try each question before revealing the answer — that struggle is the whole point.</p>
+  </div>
+</div>
 
-            <div class="info-box">
-                💡 <strong>Pro Tip:</strong> If you get something wrong, don't just read the answer. Go back to the lesson 
-                and understand WHY the answer is right. That's where learning happens.
-            </div>
+<div class="lesson-body">
 
-            <h2>Module 1 Practice: The 12 Notes</h2>
+  <!-- HOW TO PRACTICE -->
+  <div class="practice-intro" data-aos="fade-up">
+    <h3 style="color: var(--green); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;">How to Use These Exercises</h3>
+    <div class="practice-tips">
+      <ol>
+        <li><strong>Try each question</strong> without looking at the answer first</li>
+        <li><strong>Write down your answer</strong> — or at least commit to one in your head</li>
+        <li><strong>Reveal the answer</strong> and check. Wrong? Go back to the lesson and understand WHY</li>
+        <li><strong>Move on</strong> — do all the exercises in one session if you can</li>
+      </ol>
+    </div>
+    <div class="info-box" style="margin-top: 1.25rem; margin-bottom: 0;">
+      <span>💡</span>
+      <div><strong>Pro tip:</strong> Getting something wrong and understanding why is 10× more valuable than getting it right on the first try.</div>
+    </div>
+  </div>
 
-            <div class="quiz-item">
-                <div class="quiz-question">Q1: What are the 12 notes of music? Put them in order starting from C.</div>
-                <button class="show-answer-btn" onclick="toggleQuizAnswer('q1')">Show Answer</button>
-                <div class="answer" id="q1">
-                    <p><strong>Answer:</strong> C - C# - D - D# - E - F - F# - G - G# - A - A# - B</p>
-                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
-                        <strong>Explanation:</strong> These 12 notes make up the chromatic scale. They're the only notes in 
-                        Western music, and they repeat up and down in the same order. Memorizing this order is one of the 
-                        most important things you'll do.
-                    </p>
-                </div>
-            </div>
+  <!-- MODULE 1 QUESTIONS -->
+  <h2 class="section-heading-2" data-aos="fade-up">Module 1 — The 12 Notes</h2>
 
-            <div class="quiz-item">
-                <div class="quiz-question">Q2: What does the # (sharp) symbol mean?</div>
-                <button class="show-answer-btn" onclick="toggleQuizAnswer('q2')">Show Answer</button>
-                <div class="answer" id="q2">
-                    <p><strong>Answer:</strong> Sharp means "one fret higher" or "one semitone higher."</p>
-                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
-                        <strong>Explanation:</strong> When you see C#, it means the note one fret higher than C. 
-                        On your guitar, if C is on fret 8, then C# is on fret 9. The # symbol always means "raise it by one fret."
-                    </p>
-                </div>
-            </div>
+  <div class="quiz-card" data-aos="fade-up">
+    <p class="quiz-q">Q1: What are the 12 notes of music? Put them in order starting from C.</p>
+    <button class="reveal-btn" onclick="toggleQuiz('q1', this)">Reveal Answer</button>
+    <div class="quiz-answer-content" id="q1">
+      <strong>Answer</strong>
+      <p>C — C# — D — D# — E — F — F# — G — G# — A — A# — B</p>
+      <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.82rem;">These 12 notes make up the chromatic scale. Memorizing this order is one of the most important things you'll do in this entire course.</p>
+    </div>
+  </div>
 
-            <div class="quiz-item">
-                <div class="quiz-question">Q3: How many notes are between C and C (going up)? Counting C at the start but not C at the end.</div>
-                <button class="show-answer-btn" onclick="toggleQuizAnswer('q3')">Show Answer</button>
-                <div class="answer" id="q3">
-                    <p><strong>Answer:</strong> 12 notes</p>
-                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
-                        <strong>Explanation:</strong> C - C# - D - D# - E - F - F# - G - G# - A - A# - B = 12 notes. 
-                        This 12-note pattern is called an octave.
-                    </p>
-                </div>
-            </div>
+  <div class="quiz-card" data-aos="fade-up">
+    <p class="quiz-q">Q2: What does the # (sharp) symbol mean?</p>
+    <button class="reveal-btn" onclick="toggleQuiz('q2', this)">Reveal Answer</button>
+    <div class="quiz-answer-content" id="q2">
+      <strong>Answer</strong>
+      <p>Sharp means "one fret higher" — or one semitone higher in pitch.</p>
+      <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.82rem;">When you see C#, it means the note one fret above C. On guitar: if C is fret 8, C# is fret 9.</p>
+    </div>
+  </div>
 
-            <div class="quiz-item">
-                <div class="quiz-question">Q4: On the low E string, E is the open string (fret 0). What fret is F?</div>
-                <button class="show-answer-btn" onclick="toggleQuizAnswer('q4')">Show Answer</button>
-                <div class="answer" id="q4">
-                    <p><strong>Answer:</strong> Fret 1</p>
-                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
-                        <strong>Explanation:</strong> F is one fret up from E. That's why it's at fret 1. 
-                        Remember: each fret = one note higher.
-                    </p>
-                </div>
-            </div>
+  <div class="quiz-card" data-aos="fade-up">
+    <p class="quiz-q">Q3: How many notes are there between one C and the next C (counting the first C but not the second)?</p>
+    <button class="reveal-btn" onclick="toggleQuiz('q3', this)">Reveal Answer</button>
+    <div class="quiz-answer-content" id="q3">
+      <strong>Answer: 12 notes</strong>
+      <p>C – C# – D – D# – E – F – F# – G – G# – A – A# – B = 12 notes. This 12-note span is called an <em>octave</em>.</p>
+    </div>
+  </div>
 
-            <div class="quiz-item">
-                <div class="quiz-question">Q5: What note is on fret 3 of the low E string?</div>
-                <button class="show-answer-btn" onclick="toggleQuizAnswer('q5')">Show Answer</button>
-                <div class="answer" id="q5">
-                    <p><strong>Answer:</strong> G</p>
-                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
-                        <strong>Explanation:</strong> Fret 0 = E, Fret 1 = F, Fret 2 = F#, Fret 3 = G. 
-                        Count up from E: E (0) → F (1) → F# (2) → G (3).
-                    </p>
-                </div>
-            </div>
+  <div class="quiz-card" data-aos="fade-up">
+    <p class="quiz-q">Q4: On the low E string, E is the open string (fret 0). What fret is F on?</p>
+    <button class="reveal-btn" onclick="toggleQuiz('q4', this)">Reveal Answer</button>
+    <div class="quiz-answer-content" id="q4">
+      <strong>Answer: Fret 1</strong>
+      <p>F is one semitone above E — that's exactly one fret. So: fret 0 = E, fret 1 = F.</p>
+    </div>
+  </div>
 
-            <h2>Module 2 Preview Practice: The Fretboard</h2>
+  <div class="quiz-card" data-aos="fade-up">
+    <p class="quiz-q">Q5: What note is on fret 3 of the low E string?</p>
+    <button class="reveal-btn" onclick="toggleQuiz('q5', this)">Reveal Answer</button>
+    <div class="quiz-answer-content" id="q5">
+      <strong>Answer: G</strong>
+      <p>Count up from E: E (0) → F (1) → F# (2) → G (3). Each fret is one step up the chromatic scale.</p>
+    </div>
+  </div>
 
-            <div class="quiz-item">
-                <div class="quiz-question">Q6: The same 12-note pattern appears on every string. True or False?</div>
-                <button class="show-answer-btn" onclick="toggleQuizAnswer('q6')">Show Answer</button>
-                <div class="answer" id="q6">
-                    <p><strong>Answer:</strong> True</p>
-                    <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
-                        <strong>Explanation:</strong> This is one of the most important ideas in guitar theory. 
-                        The same pattern of 12 notes repeats on all 6 strings. The only difference is that each string 
-                        starts on a different note.
-                    </p>
-                </div>
-            </div>
+  <div class="quiz-card" data-aos="fade-up">
+    <p class="quiz-q">Q6: True or False — The same 12-note pattern appears on every string of the guitar.</p>
+    <button class="reveal-btn" onclick="toggleQuiz('q6', this)">Reveal Answer</button>
+    <div class="quiz-answer-content" id="q6">
+      <strong>Answer: True</strong>
+      <p>This is one of the most important ideas in guitar theory. The chromatic sequence repeats on all 6 strings. The only difference is which note each string starts on (open string note).</p>
+    </div>
+  </div>
 
-            <h2>Create Your Own Study Schedule</h2>
-            <div style="background: var(--light); padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
-                <p style="margin-bottom: 1rem;"><strong>Recommended practice routine:</strong></p>
-                <ul style="margin: 0; padding-left: 1.5rem;">
-                    <li><strong>Daily:</strong> 10 minutes on exercises from the current module</li>
-                    <li><strong>3x per week:</strong> 15 minutes reviewing notes on your guitar</li>
-                    <li><strong>Weekly:</strong> 30 minutes working through one complete lesson</li>
-                    <li><strong>As needed:</strong> Review past lessons when you get confused</li>
-                </ul>
-            </div>
+  <div class="quiz-card" data-aos="fade-up">
+    <p class="quiz-q">Q7: C# and D♭ — are these the same note or different notes?</p>
+    <button class="reveal-btn" onclick="toggleQuiz('q7', this)">Reveal Answer</button>
+    <div class="quiz-answer-content" id="q7">
+      <strong>Answer: Same note</strong>
+      <p>C# and D♭ are <em>enharmonic equivalents</em> — two different names for the same physical pitch. On guitar, they're the exact same fret.</p>
+    </div>
+  </div>
 
-            <h2>Self-Assessment: Are You Ready to Move On?</h2>
-            <p>
-                Before moving to the next module, make sure you can answer YES to all of these:
-            </p>
+  <!-- READINESS CHECK -->
+  <h2 class="section-heading-2" data-aos="fade-up">Readiness Check — Module 1</h2>
 
-            <div class="exercise-section">
-                <div style="margin: 0.5rem 0;">
-                    <input type="checkbox" id="check1"> 
-                    <label for="check1">I can say the 12 notes in order without thinking</label>
-                </div>
-                <div style="margin: 0.5rem 0;">
-                    <input type="checkbox" id="check2"> 
-                    <label for="check2">I understand that # (sharp) means "one fret higher"</label>
-                </div>
-                <div style="margin: 0.5rem 0;">
-                    <input type="checkbox" id="check3"> 
-                    <label for="check3">I can find any note on one string of my guitar</label>
-                </div>
-                <div style="margin: 0.5rem 0;">
-                    <input type="checkbox" id="check4"> 
-                    <label for="check4">I understand that the same pattern repeats on every string</label>
-                </div>
-                <div style="margin: 0.5rem 0;">
-                    <input type="checkbox" id="check5"> 
-                    <label for="check5">I can do 5+ exercises correctly without looking at answers</label>
-                </div>
-            </div>
+  <div class="readiness-card" data-aos="fade-up">
+    <p class="readiness-title">Before moving to Module 2, can you check all of these?</p>
+    <div class="checklist">
+      <div class="check-item">
+        <input type="checkbox" id="c1">
+        <label for="c1">I can say the 12 notes in order without thinking</label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="c2">
+        <label for="c2">I understand that # (sharp) means "one fret higher"</label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="c3">
+        <label for="c3">I can find any note on one string of my guitar</label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="c4">
+        <label for="c4">I understand that the same pattern repeats on every string</label>
+      </div>
+      <div class="check-item">
+        <input type="checkbox" id="c5">
+        <label for="c5">I can answer 5+ exercises correctly without looking at answers</label>
+      </div>
+    </div>
+    <p id="readyMsg" style="display:none; margin-top: 1rem; color: var(--green); font-weight: 600; font-size: 0.9rem;">
+      ✅ All checked — you're ready for Module 2!
+    </p>
+  </div>
 
-            <p style="margin-top: 2rem; padding: 1rem; background: #e8f5e9; border-radius: 4px; color: #2e7d32;">
-                ✅ If you can check all 5 boxes, you're ready to move to Module 2! 
-                If not, spend another day on the current lessons before moving forward.
-            </p>
+  <!-- PRACTICE SCHEDULE -->
+  <h2 class="section-heading-2" data-aos="fade-up">Practice Schedule</h2>
 
-            <div class="lesson-nav" style="margin-top: 2rem;">
-                <a href="lessons.html">← Back to Lessons</a>
-                <a href="lesson-2.html">Next: The Fretboard Map →</a>
-            </div>
-        </section>
-    </main>
+  <div class="schedule-grid" data-aos="fade-up">
+    <div class="schedule-item">
+      <div class="schedule-freq">Daily</div>
+      <div class="schedule-task">10 min on exercises from the current module</div>
+    </div>
+    <div class="schedule-item">
+      <div class="schedule-freq">3× Per Week</div>
+      <div class="schedule-task">15 min reviewing notes on your actual guitar</div>
+    </div>
+    <div class="schedule-item">
+      <div class="schedule-freq">Weekly</div>
+      <div class="schedule-task">30 min working through one complete new lesson</div>
+    </div>
+    <div class="schedule-item">
+      <div class="schedule-freq">As Needed</div>
+      <div class="schedule-task">Review past lessons when you hit a wall</div>
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2024 Guitar Theory Bootcamp. Learn music theory. Master your instrument. 🎸</p>
-    </footer>
+  <!-- LESSON NAV -->
+  <div class="lesson-nav" data-aos="fade-up">
+    <a href="lessons.html">← Back to Lessons</a>
+    <a href="lesson-1.html">Start Module 1 →</a>
+  </div>
 
-    <script>
-        function toggleQuizAnswer(id) {
-            const answer = document.getElementById(id);
-            answer.classList.toggle('show');
-            
-            const button = event.target;
-            if (answer.classList.contains('show')) {
-                button.textContent = 'Hide Answer';
-            } else {
-                button.textContent = 'Show Answer';
-            }
-        }
-    </script>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">🎸 Guitar Theory <span>Bootcamp</span></div>
+    <p class="footer-text">Learn music theory. Master your instrument. &copy; 2024</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  window.addEventListener('scroll', () => {
+    const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById('scroll-progress').style.width = scrolled + '%';
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
+  });
+
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  AOS.init({ duration: 650, once: true, offset: 50 });
+
+  gsap.from('#pageTitle', { y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.2 });
+
+  function toggleQuiz(id, btn) {
+    const el = document.getElementById(id);
+    const isShowing = el.classList.toggle('show');
+    btn.textContent = isShowing ? 'Hide Answer' : 'Reveal Answer';
+  }
+
+  // Readiness checker
+  const checkboxes = document.querySelectorAll('.check-item input[type=checkbox]');
+  const readyMsg = document.getElementById('readyMsg');
+
+  checkboxes.forEach(cb => {
+    cb.addEventListener('change', () => {
+      const allChecked = [...checkboxes].every(c => c.checked);
+      readyMsg.style.display = allChecked ? 'block' : 'none';
+    });
+  });
+</script>
 </body>
 </html>

@@ -1,262 +1,336 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quick Reference - Guitar Theory Bootcamp</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Reference — Guitar Theory Bootcamp</title>
+  <meta name="description" content="Every guitar theory concept in one place. Look it up fast.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1 class="logo">🎸 Guitar Theory Bootcamp</h1>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="lessons.html">Lessons</a></li>
-                <li><a href="practice.html">Exercises</a></li>
-                <li><a href="reference.html" class="active">Reference</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <main class="lesson-container">
-        <div class="lesson-header">
-            <h1>📖 Quick Reference</h1>
-            <p class="lesson-meta">Look things up fast • Everything you need to remember</p>
-        </div>
+<div id="scroll-progress"></div>
 
-        <div class="lesson-content">
-            <h2>The 12 Notes</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 0.5rem; margin: 1.5rem 0;">
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">C</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">C#</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">D</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">D#</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">E</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">F</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">F#</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">G</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">G#</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">A</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">A#</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700;">B</div>
-            </div>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="logo">
+      <span class="logo-icon">🎸</span>
+      <span class="logo-text">Guitar Theory <span class="logo-accent">Bootcamp</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="practice.html">Exercises</a></li>
+      <li><a href="reference.html" class="active">Reference</a></li>
+    </ul>
+  </div>
+</nav>
 
-            <h2>The Chromatic Scale (All 12 Notes)</h2>
-            <p style="font-family: monospace; font-size: 1.1rem; background: #f5f5f5; padding: 1rem; border-radius: 4px;">
-                <strong>C - C# - D - D# - E - F - F# - G - G# - A - A# - B</strong>
-            </p>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-meta">
+      <span class="meta-chip chip-week">📖 Quick Lookup</span>
+    </div>
+    <h1 class="page-title" id="pageTitle">Quick<br><span class="gradient-text">Reference</span></h1>
+    <p class="page-description">Everything you need, in one place. Bookmark this page and come back whenever something isn't clicking.</p>
+  </div>
+</div>
 
-            <h2>Key Vocabulary</h2>
-            <div style="margin: 1.5rem 0;">
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 0.5rem; border-radius: 4px;">
-                    <p style="margin: 0;"><strong>Note:</strong> A single sound. There are 12 different notes.</p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 0.5rem; border-radius: 4px;">
-                    <p style="margin: 0;"><strong>Sharp (#):</strong> One fret higher. C# is one fret higher than C.</p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 0.5rem; border-radius: 4px;">
-                    <p style="margin: 0;"><strong>Flat (♭):</strong> One fret lower. Db is one fret lower than D. (Same as C#!)</p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 0.5rem; border-radius: 4px;">
-                    <p style="margin: 0;"><strong>Octave:</strong> The distance from one note to the same note higher. 12 notes = 1 octave.</p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 0.5rem; border-radius: 4px;">
-                    <p style="margin: 0;"><strong>Semitone/Half Step:</strong> The distance between any two notes right next to each other. = 1 fret on guitar.</p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 0.5rem; border-radius: 4px;">
-                    <p style="margin: 0;"><strong>Tone/Whole Step:</strong> The distance of 2 semitones. = 2 frets on guitar.</p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 0.5rem; border-radius: 4px;">
-                    <p style="margin: 0;"><strong>Interval:</strong> The distance between two notes. Can be measured in semitones.</p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 0.5rem; border-radius: 4px;">
-                    <p style="margin: 0;"><strong>Scale:</strong> A collection of notes in a specific order. The Major scale and Minor scale are the most common.</p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 0.5rem; border-radius: 4px;">
-                    <p style="margin: 0;"><strong>Chord:</strong> Three or more notes played together. Major chords sound happy, minor chords sound sad.</p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; border-radius: 4px;">
-                    <p style="margin: 0;"><strong>Tab/Tablature:</strong> A way of writing music for guitar. Shows you what fret to play on what string.</p>
-                </div>
-            </div>
+<div class="ref-section">
 
-            <h2>Guitar Strings (Standard Tuning)</h2>
-            <p>The 6 open strings on a guitar, from thickest to thinnest:</p>
-            <div style="background: #f5f5f5; padding: 1rem; border-radius: 4px; margin: 1rem 0; font-family: monospace; font-size: 1.1rem;">
-                <p style="margin: 0.25rem 0;"><strong>String 6 (Thickest):</strong> E</p>
-                <p style="margin: 0.25rem 0;"><strong>String 5:</strong> A</p>
-                <p style="margin: 0.25rem 0;"><strong>String 4:</strong> D</p>
-                <p style="margin: 0.25rem 0;"><strong>String 3:</strong> G</p>
-                <p style="margin: 0.25rem 0;"><strong>String 2:</strong> B</p>
-                <p style="margin: 0.25rem 0;"><strong>String 1 (Thinnest):</strong> E</p>
-            </div>
+  <!-- THE 12 NOTES -->
+  <h2 data-aos="fade-up">The 12 Notes</h2>
+  <div class="note-grid" data-aos="fade-up">
+    <div class="note-pill">C</div>
+    <div class="note-pill sharp">C#</div>
+    <div class="note-pill">D</div>
+    <div class="note-pill sharp">D#</div>
+    <div class="note-pill">E</div>
+    <div class="note-pill">F</div>
+    <div class="note-pill sharp">F#</div>
+    <div class="note-pill">G</div>
+    <div class="note-pill sharp">G#</div>
+    <div class="note-pill">A</div>
+    <div class="note-pill sharp">A#</div>
+    <div class="note-pill">B</div>
+  </div>
+  <div class="fretboard-wrap" style="margin-top: 1rem;" data-aos="fade-up">
+    <pre>C — C# — D — D# — E — F — F# — G — G# — A — A# — B — (repeat)</pre>
+    <p class="fretboard-label">The chromatic scale — all 12 notes in order, cycling endlessly</p>
+  </div>
 
-            <h2>Open String Notes on Every Fret (First 12 Frets)</h2>
-            <div style="overflow-x: auto; margin: 1.5rem 0;">
-                <table style="width: 100%; border-collapse: collapse;">
-                    <tr style="background: #667eea; color: white;">
-                        <th style="padding: 0.75rem; border: 1px solid #555; text-align: left;">String</th>
-                        <th style="padding: 0.75rem; border: 1px solid #555; text-align: center;">0</th>
-                        <th style="padding: 0.75rem; border: 1px solid #555; text-align: center;">1</th>
-                        <th style="padding: 0.75rem; border: 1px solid #555; text-align: center;">2</th>
-                        <th style="padding: 0.75rem; border: 1px solid #555; text-align: center;">3</th>
-                        <th style="padding: 0.75rem; border: 1px solid #555; text-align: center;">4</th>
-                        <th style="padding: 0.75rem; border: 1px solid #555; text-align: center;">5</th>
-                        <th style="padding: 0.75rem; border: 1px solid #555; text-align: center;">7</th>
-                    </tr>
-                    <tr style="background: #f9f9f9;">
-                        <td style="padding: 0.75rem; border: 1px solid #ddd;"><strong>6 (E)</strong></td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">E</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">F</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">F#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">G</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">G#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">A</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">B</td>
-                    </tr>
-                    <tr style="background: white;">
-                        <td style="padding: 0.75rem; border: 1px solid #ddd;"><strong>5 (A)</strong></td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">A</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">A#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">B</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">C</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">C#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">D</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">E</td>
-                    </tr>
-                    <tr style="background: #f9f9f9;">
-                        <td style="padding: 0.75rem; border: 1px solid #ddd;"><strong>4 (D)</strong></td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">D</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">D#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">E</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">F</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">F#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">G</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">A</td>
-                    </tr>
-                    <tr style="background: white;">
-                        <td style="padding: 0.75rem; border: 1px solid #ddd;"><strong>3 (G)</strong></td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">G</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">G#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">A</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">A#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">B</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">C</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">D</td>
-                    </tr>
-                    <tr style="background: #f9f9f9;">
-                        <td style="padding: 0.75rem; border: 1px solid #ddd;"><strong>2 (B)</strong></td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">B</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">C</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">C#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">D</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">D#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">E</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">F#</td>
-                    </tr>
-                    <tr style="background: white;">
-                        <td style="padding: 0.75rem; border: 1px solid #ddd;"><strong>1 (E)</strong></td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">E</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">F</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">F#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">G</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">G#</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">A</td>
-                        <td style="padding: 0.75rem; border: 1px solid #ddd; text-align: center;">B</td>
-                    </tr>
-                </table>
-            </div>
+  <!-- KEY VOCABULARY -->
+  <h2 data-aos="fade-up">Key Vocabulary</h2>
+  <div class="def-list" data-aos="fade-up">
+    <div class="def-item">
+      <span class="def-term">Note</span>
+      <span class="def-desc">A single musical sound. There are exactly 12 different notes in Western music.</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term">Sharp (#)</span>
+      <span class="def-desc">One fret higher. C# is one fret above C. Always raises pitch by one semitone.</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term">Flat (♭)</span>
+      <span class="def-desc">One fret lower. D♭ is one fret below D. Same pitch as the sharp below it (D♭ = C#).</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term">Octave</span>
+      <span class="def-desc">The distance from one note to the same note, higher or lower. Exactly 12 semitones = 1 octave.</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term">Semitone</span>
+      <span class="def-desc">The smallest interval in Western music. On guitar = 1 fret.</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term">Whole Tone</span>
+      <span class="def-desc">Two semitones. On guitar = 2 frets.</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term">Interval</span>
+      <span class="def-desc">The distance between two notes, measured in semitones. The building block of scales and chords.</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term">Scale</span>
+      <span class="def-desc">A specific ordered sequence of notes. Major = happy, Minor = sad. Every song is built from a scale.</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term">Chord</span>
+      <span class="def-desc">Three or more notes played simultaneously. Major chords sound bright, minor chords sound dark.</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term">Tab / Tablature</span>
+      <span class="def-desc">Guitar notation showing which fret to press on which string. No music-reading required.</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term">Enharmonic</span>
+      <span class="def-desc">Two different names for the same pitch. C# and D♭ are enharmonic — same fret, different names.</span>
+    </div>
+  </div>
 
-            <h2>The Major Scale Formula</h2>
-            <p>Every major scale follows this pattern (in whole steps and half steps):</p>
-            <div style="background: #e8f5e9; padding: 1rem; border-radius: 4px; margin: 1rem 0; font-family: monospace;">
-                <strong>W - W - H - W - W - W - H</strong>
-                <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">
-                    (W = Whole Step = 2 frets, H = Half Step = 1 fret)
-                </p>
-            </div>
+  <!-- GUITAR STRINGS -->
+  <h2 data-aos="fade-up">Guitar Strings — Standard Tuning</h2>
+  <div class="def-list" data-aos="fade-up" style="max-width: 500px;">
+    <div class="def-item">
+      <span class="def-term" style="font-family: var(--font-mono);">String 6</span>
+      <span class="def-desc">E (thickest — the one closest to your chin)</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term" style="font-family: var(--font-mono);">String 5</span>
+      <span class="def-desc">A</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term" style="font-family: var(--font-mono);">String 4</span>
+      <span class="def-desc">D</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term" style="font-family: var(--font-mono);">String 3</span>
+      <span class="def-desc">G</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term" style="font-family: var(--font-mono);">String 2</span>
+      <span class="def-desc">B</span>
+    </div>
+    <div class="def-item">
+      <span class="def-term" style="font-family: var(--font-mono);">String 1</span>
+      <span class="def-desc">E (thinnest — closest to the floor)</span>
+    </div>
+  </div>
 
-            <h2>The Minor Scale Formula (Natural Minor)</h2>
-            <p>Every minor scale follows this pattern:</p>
-            <div style="background: #e8f5e9; padding: 1rem; border-radius: 4px; margin: 1rem 0; font-family: monospace;">
-                <strong>W - H - W - W - H - W - W</strong>
-            </div>
+  <!-- FRETBOARD -->
+  <h2 data-aos="fade-up">Fretboard — First 7 Frets</h2>
+  <div class="fretboard-wrap" data-aos="fade-up" style="overflow-x: auto;">
+    <table class="string-table" style="min-width: 600px;">
+      <thead>
+        <tr>
+          <th>String</th>
+          <th>0 (Open)</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>7</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>6</strong> (E)</td>
+          <td>E</td><td>F</td><td>F#</td><td>G</td><td>G#</td><td>A</td><td>B</td>
+        </tr>
+        <tr>
+          <td><strong>5</strong> (A)</td>
+          <td>A</td><td>A#</td><td>B</td><td>C</td><td>C#</td><td>D</td><td>E</td>
+        </tr>
+        <tr>
+          <td><strong>4</strong> (D)</td>
+          <td>D</td><td>D#</td><td>E</td><td>F</td><td>F#</td><td>G</td><td>A</td>
+        </tr>
+        <tr>
+          <td><strong>3</strong> (G)</td>
+          <td>G</td><td>G#</td><td>A</td><td>A#</td><td>B</td><td>C</td><td>D</td>
+        </tr>
+        <tr>
+          <td><strong>2</strong> (B)</td>
+          <td>B</td><td>C</td><td>C#</td><td>D</td><td>D#</td><td>E</td><td>F#</td>
+        </tr>
+        <tr>
+          <td><strong>1</strong> (E)</td>
+          <td>E</td><td>F</td><td>F#</td><td>G</td><td>G#</td><td>A</td><td>B</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-            <h2>Major Chord Formula</h2>
-            <p>To build a major chord: <strong>Root + Major 3rd + Perfect 5th</strong></p>
-            <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                In semitones: Start note + 4 semitones + 3 semitones
-            </p>
-            <p><strong>Example: C Major</strong></p>
-            <ul style="margin: 0 0 1rem 2rem;">
-                <li>C (root)</li>
-                <li>E (4 semitones up from C)</li>
-                <li>G (3 semitones up from E)</li>
-            </ul>
+  <!-- SCALE FORMULAS -->
+  <h2 data-aos="fade-up">Scale Formulas</h2>
+  <div data-aos="fade-up">
+    <div class="pattern-block">
+      <strong>Major Scale: &nbsp; W – W – H – W – W – W – H</strong>
+      <small>W = Whole Step (2 frets) &nbsp;|&nbsp; H = Half Step (1 fret) &nbsp;|&nbsp; Sounds happy, bright</small>
+    </div>
+    <div class="pattern-block" style="border-color: rgba(168,85,247,0.2); color: var(--purple); margin-top: 0.75rem;">
+      <strong>Natural Minor Scale: &nbsp; W – H – W – W – H – W – W</strong>
+      <small style="color: var(--text-muted);">Same notes as the major scale, but starting on a different note &nbsp;|&nbsp; Sounds sad, dark</small>
+    </div>
+  </div>
 
-            <h2>Minor Chord Formula</h2>
-            <p>To build a minor chord: <strong>Root + Minor 3rd + Perfect 5th</strong></p>
-            <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                In semitones: Start note + 3 semitones + 4 semitones
-            </p>
-            <p><strong>Example: A Minor</strong></p>
-            <ul style="margin: 0 0 1rem 2rem;">
-                <li>A (root)</li>
-                <li>C (3 semitones up from A)</li>
-                <li>E (4 semitones up from C)</li>
-            </ul>
+  <!-- CHORD FORMULAS -->
+  <h2 data-aos="fade-up">Chord Formulas</h2>
+  <div class="chord-formula" data-aos="fade-up">
+    <div class="chord-card">
+      <div class="chord-name">Major Chord</div>
+      <div class="chord-formula-text">Root + 4 semitones + 3 semitones</div>
+      <div class="chord-example">
+        <strong>C Major:</strong> C → E (4 up) → G (3 up)<br>
+        Sounds: bright, happy, resolved
+      </div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name">Minor Chord</div>
+      <div class="chord-formula-text">Root + 3 semitones + 4 semitones</div>
+      <div class="chord-example">
+        <strong>A Minor:</strong> A → C (3 up) → E (4 up)<br>
+        Sounds: dark, sad, emotional
+      </div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name">Dominant 7th</div>
+      <div class="chord-formula-text">Root + 4 + 3 + 3 semitones</div>
+      <div class="chord-example">
+        <strong>G7:</strong> G → B → D → F<br>
+        Sounds: tense, wants to resolve
+      </div>
+    </div>
+    <div class="chord-card">
+      <div class="chord-name">Diminished</div>
+      <div class="chord-formula-text">Root + 3 + 3 semitones</div>
+      <div class="chord-example">
+        <strong>B°:</strong> B → D → F<br>
+        Sounds: very tense, unstable
+      </div>
+    </div>
+  </div>
 
-            <h2>Common Chord Progressions</h2>
-            <div style="margin: 1.5rem 0;">
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 1rem; border-radius: 4px;">
-                    <p style="margin: 0; font-weight: 700;">I-IV-V (The Most Common)</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem;">
-                        This progression is in thousands of songs. It sounds "complete" and happy.
-                    </p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; margin-bottom: 1rem; border-radius: 4px;">
-                    <p style="margin: 0; font-weight: 700;">I-V-vi-IV</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem;">
-                        Very popular in modern pop and rock. Sounds catchy and emotional.
-                    </p>
-                </div>
-                <div style="background: #f5f5f5; padding: 1rem; border-radius: 4px;">
-                    <p style="margin: 0; font-weight: 700;">vi-IV-I-V (Sadder variation)</p>
-                    <p style="margin: 0.5rem 0 0 0; font-size: 0.9rem;">
-                        The same chords as I-V-vi-IV but starting on vi, which makes it feel more emotional.
-                    </p>
-                </div>
-            </div>
+  <!-- CHORD PROGRESSIONS -->
+  <h2 data-aos="fade-up">Common Chord Progressions</h2>
+  <div class="progression-list" data-aos="fade-up">
+    <div class="progression-item">
+      <div class="prog-name">I – IV – V</div>
+      <div class="prog-desc">The most fundamental progression in Western music. Thousands of blues, rock, and country songs. Sounds complete and resolved.</div>
+    </div>
+    <div class="progression-item">
+      <div class="prog-name">I – V – vi – IV</div>
+      <div class="prog-desc">The "four-chord song" used in an enormous amount of modern pop. Catchy, circular, and emotionally balanced.</div>
+    </div>
+    <div class="progression-item">
+      <div class="prog-name">vi – IV – I – V</div>
+      <div class="prog-desc">Same four chords as above but starting on vi. Feels more melancholic and introspective.</div>
+    </div>
+    <div class="progression-item">
+      <div class="prog-name">I – IV – vi – V</div>
+      <div class="prog-desc">Common in ballads. The vi gives it emotional weight before resolving back through V.</div>
+    </div>
+    <div class="progression-item">
+      <div class="prog-name">ii – V – I</div>
+      <div class="prog-desc">The backbone of jazz harmony. The ii chord creates tension that V intensifies, then I resolves it perfectly.</div>
+    </div>
+  </div>
 
-            <h2>Roman Numeral Notation</h2>
-            <p>Chords in a key are represented by Roman numerals. In a major key:</p>
-            <ul style="margin: 1rem 0 1rem 2rem;">
-                <li><strong>I (1):</strong> Major chord</li>
-                <li><strong>ii (2):</strong> Minor chord</li>
-                <li><strong>iii (3):</strong> Minor chord</li>
-                <li><strong>IV (4):</strong> Major chord</li>
-                <li><strong>V (5):</strong> Major chord (often dominant 7th)</li>
-                <li><strong>vi (6):</strong> Minor chord</li>
-                <li><strong>vii° (7):</strong> Diminished chord (rarely used)</li>
-            </ul>
+  <!-- ROMAN NUMERALS -->
+  <h2 data-aos="fade-up">Roman Numeral Notation (Major Key)</h2>
+  <div class="roman-grid" data-aos="fade-up">
+    <div class="roman-cell">
+      <span class="roman-numeral">I</span>
+      <div class="roman-type">Major</div>
+    </div>
+    <div class="roman-cell">
+      <span class="roman-numeral">ii</span>
+      <div class="roman-type">Minor</div>
+    </div>
+    <div class="roman-cell">
+      <span class="roman-numeral">iii</span>
+      <div class="roman-type">Minor</div>
+    </div>
+    <div class="roman-cell">
+      <span class="roman-numeral">IV</span>
+      <div class="roman-type">Major</div>
+    </div>
+    <div class="roman-cell">
+      <span class="roman-numeral">V</span>
+      <div class="roman-type">Major</div>
+    </div>
+    <div class="roman-cell">
+      <span class="roman-numeral">vi</span>
+      <div class="roman-type">Minor</div>
+    </div>
+    <div class="roman-cell">
+      <span class="roman-numeral">vii°</span>
+      <div class="roman-type">Diminished</div>
+    </div>
+  </div>
+  <p class="content-p" style="font-size: 0.85rem; margin-top: 0.75rem;">
+    Uppercase = major chord. Lowercase = minor chord. ° = diminished. This system works in <em>any</em> key.
+  </p>
 
-            <h2>Need Help?</h2>
-            <div class="info-box">
-                📚 Can't find what you're looking for? Go back to the lessons and search for the concept. 
-                Or try the practice exercises to find related questions.
-            </div>
+  <!-- NAV -->
+  <div class="lesson-nav" data-aos="fade-up">
+    <a href="lessons.html">← Lessons</a>
+    <a href="practice.html">Practice Exercises →</a>
+  </div>
 
-            <div class="lesson-nav" style="margin-top: 2rem;">
-                <a href="lessons.html">← Back to Lessons</a>
-                <a href="practice.html">View Exercises →</a>
-            </div>
-        </div>
-    </main>
+</div>
 
-    <footer>
-        <p>&copy; 2024 Guitar Theory Bootcamp. Learn music theory. Master your instrument. 🎸</p>
-    </footer>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">🎸 Guitar Theory <span>Bootcamp</span></div>
+    <p class="footer-text">Learn music theory. Master your instrument. &copy; 2024</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  window.addEventListener('scroll', () => {
+    const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById('scroll-progress').style.width = scrolled + '%';
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
+  });
+
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  AOS.init({ duration: 650, once: true, offset: 50 });
+
+  gsap.from('#pageTitle', { y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.2 });
+</script>
 </body>
 </html>

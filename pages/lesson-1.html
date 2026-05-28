@@ -1,232 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Module 1: The 12 Notes - Guitar Theory Bootcamp</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 1: The 12 Notes — Guitar Theory Bootcamp</title>
+  <meta name="description" content="There are only 12 notes in all of music. Learn them, understand them, and find them on your guitar.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1 class="logo">🎸 Guitar Theory Bootcamp</h1>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="lessons.html" class="active">Lessons</a></li>
-                <li><a href="practice.html">Exercises</a></li>
-                <li><a href="reference.html">Reference</a></li>
-            </ul>
+
+<div id="scroll-progress"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="logo">
+      <span class="logo-icon">🎸</span>
+      <span class="logo-text">Guitar Theory <span class="logo-accent">Bootcamp</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="lessons.html" class="active">Lessons</a></li>
+      <li><a href="practice.html">Exercises</a></li>
+      <li><a href="reference.html">Reference</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-meta">
+      <span class="meta-chip chip-week">Week 1</span>
+      <span class="meta-chip chip-time">⏱ 20 min</span>
+      <span class="meta-chip chip-easy">Easy</span>
+    </div>
+    <h1 class="page-title" id="pageTitle">Module 1<br><span class="gradient-text">The 12 Notes</span></h1>
+    <p class="page-description">All of music — every song ever written — uses exactly 12 different sounds. That's it. Learn them once and you've unlocked the foundation of everything.</p>
+  </div>
+</div>
+
+<!-- LESSON BODY -->
+<div class="lesson-body">
+
+  <div class="content-block" data-aos="fade-up">
+    <h2 class="content-h2">The Big Idea</h2>
+    <p class="content-p">
+      Here's something that blows everyone's mind: <strong>there are only 12 different notes in all of music.</strong>
+      That's it. Just 12. Every song ever written — from Bach to Beyoncé — uses these same 12 notes over and over.
+    </p>
+    <div class="info-box">
+      <span>💡</span>
+      <div><strong>Remember:</strong> Music is repeating patterns. You don't need to memorize thousands of sounds.
+      There are exactly 12, and they cycle up and down the fretboard endlessly.</div>
+    </div>
+  </div>
+
+  <div class="content-block" data-aos="fade-up">
+    <h2 class="content-h2">The 12 Notes (In Order)</h2>
+    <p class="content-p">Here are all 12 notes. Say them out loud as you read — that rhythm helps them stick:</p>
+
+    <div class="note-grid">
+      <div class="note-pill">C</div>
+      <div class="note-pill sharp">C#</div>
+      <div class="note-pill">D</div>
+      <div class="note-pill sharp">D#</div>
+      <div class="note-pill">E</div>
+      <div class="note-pill">F</div>
+      <div class="note-pill sharp">F#</div>
+      <div class="note-pill">G</div>
+      <div class="note-pill sharp">G#</div>
+      <div class="note-pill">A</div>
+      <div class="note-pill sharp">A#</div>
+      <div class="note-pill">B</div>
+    </div>
+
+    <div class="warning-box">
+      <span>⚠️</span>
+      <div><strong>The # (Sharp) Symbol:</strong> C# is just the note squeezed between C and D.
+      Each fret on your guitar is one step — so C# is literally one fret higher than C.
+      When you see #, say "sharp." C# = "C sharp."</div>
+    </div>
+  </div>
+
+  <div class="content-block" data-aos="fade-up">
+    <h2 class="content-h2">Why These 12?</h2>
+    <p class="content-p">
+      The 12 notes exist because of how human hearing works. Our ears perceive pitch in a pattern that repeats every 12 steps — this repetition is called an <strong>octave</strong>. When you play the same note higher or lower, it sounds like "the same note" just shifted up or down.
+    </p>
+    <p class="content-p">
+      Think of it like a clock: 1, 2, 3 … 12, then back to 1. The notes work exactly the same way: C, C#, D … B, then C again (but higher). The pattern just cycles forever up and down your guitar.
+    </p>
+  </div>
+
+  <div class="content-block" data-aos="fade-up">
+    <h2 class="content-h2">How to Remember Them</h2>
+    <p class="content-p">Split the 12 notes into two groups — it's much easier to memorize:</p>
+
+    <div class="def-list">
+      <div class="def-item">
+        <span class="def-term">Natural notes</span>
+        <span class="def-desc" style="font-family: var(--font-mono); font-size: 1rem; color: var(--text-primary);">C &nbsp; D &nbsp; E &nbsp; F &nbsp; G &nbsp; A &nbsp; B</span>
+      </div>
+      <div class="def-item">
+        <span class="def-term">Sharp notes</span>
+        <span class="def-desc" style="font-family: var(--font-mono); font-size: 1rem; color: var(--purple);">C# &nbsp; D# &nbsp; — &nbsp; F# &nbsp; G# &nbsp; A# &nbsp; —</span>
+      </div>
+    </div>
+
+    <div class="info-box">
+      <span>💡</span>
+      <div><strong>No E# or B#.</strong> E and B don't have sharps. They're naturally one step apart from F and C. This is one of those "just memorize it" facts that becomes obvious later.</div>
+    </div>
+  </div>
+
+  <div class="content-block" data-aos="fade-up">
+    <h2 class="content-h2">On Your Guitar</h2>
+    <p class="content-p">
+      Here's what makes guitar special: <strong>the same 12-note pattern repeats on every single string.</strong>
+      Learn it on one string — you know it on all six. The only difference is where each string starts.
+    </p>
+
+    <div class="fretboard-wrap">
+      <pre>
+Fret:   0    1    2    3    4    5    6    7    8    9    10   11   12
+        |    |    |    |    |    |    |    |    |    |    |    |    |
+Note:   C   C#    D   D#    E    F   F#    G   G#    A   A#    B    C
+      </pre>
+      <p class="fretboard-label">One string starting on C — the same pattern applies to any starting note</p>
+    </div>
+
+    <p class="content-p">
+      On a standard-tuned guitar, the open strings are E, A, D, G, B, E (thickest to thinnest). Each one starts its own 12-note cycle at a different point in the sequence.
+    </p>
+  </div>
+
+  <div class="content-block" data-aos="fade-up">
+    <h2 class="content-h2">What About Flats (♭)?</h2>
+    <p class="content-p">
+      You'll eventually hear the word "flat" — symbolized as ♭. Good news: <strong>a flat is the same as a sharp, just named from the other direction.</strong>
+    </p>
+
+    <div class="def-list">
+      <div class="def-item">
+        <span class="def-term">C# = D♭</span>
+        <span class="def-desc">Same physical note. C-sharp going up, D-flat going down.</span>
+      </div>
+      <div class="def-item">
+        <span class="def-term">D# = E♭</span>
+        <span class="def-desc">Same physical note. D-sharp going up, E-flat going down.</span>
+      </div>
+      <div class="def-item">
+        <span class="def-term">F# = G♭</span>
+        <span class="def-desc">Same physical note. F-sharp going up, G-flat going down.</span>
+      </div>
+    </div>
+
+    <p class="content-p" style="margin-top: 1rem;">For now, stick with sharps. We'll explain when and why to use flats later (it's a context thing).</p>
+
+    <div class="success-box">
+      <span>✅</span>
+      <div><strong>Quick Win:</strong> You now know that all of music uses just 12 notes. You're ahead of 99% of beginner musicians. Seriously — most players never learn this properly.</div>
+    </div>
+  </div>
+
+  <!-- EXERCISES -->
+  <div class="content-block" data-aos="fade-up">
+    <h2 class="content-h2">Practice</h2>
+
+    <div class="exercise-block">
+      <h3 class="exercise-title">Exercise 1 — Memorize the Order</h3>
+      <p class="content-p" style="font-size: 0.9rem;">Say this out loud, three times a day, every day this week. It actually has a rhythm — lean into it:</p>
+
+      <div class="exercise-item-box">
+        <strong>The Full Cycle:</strong>
+        <div style="font-family: var(--font-mono); font-size: 1.05rem; margin-top: 0.5rem; color: var(--amber); letter-spacing: 0.05em;">
+          C — C# — D — D# — E — F — F# — G — G# — A — A# — B — C
         </div>
-    </nav>
+      </div>
 
-    <main class="lesson-container">
-        <div class="lesson-header">
-            <h1>📍 Module 1: The 12 Notes</h1>
-            <p class="lesson-meta">Week 1 • 20 minutes • Difficulty: Easy</p>
-        </div>
+      <button class="reveal-btn" onclick="toggleReveal('ex1', this)">Show practice tips</button>
+      <div class="reveal-answer" id="ex1">
+        <strong>Tips to make it stick:</strong>
+        <ul>
+          <li>Say it out loud, not in your head</li>
+          <li>Keep the same tempo each time — give it a beat</li>
+          <li>Do it first thing in the morning and last thing at night</li>
+          <li>After 3 days, try saying it backwards (B → C)</li>
+          <li>After 7 days, you should know it cold without thinking</li>
+        </ul>
+      </div>
+    </div>
 
-        <div class="lesson-content">
-            <h2>The Big Idea</h2>
-            <p>
-                Here's something that blows everyone's mind: <strong>There are only 12 different notes in all of music.</strong> 
-                That's it. Just 12. Every song ever written uses these same 12 notes over and over.
-            </p>
+    <div class="exercise-block">
+      <h3 class="exercise-title">Exercise 2 — Find Notes on Your Guitar</h3>
+      <p class="content-p" style="font-size: 0.9rem;">Take your guitar and find these notes on the low E string (the thickest one):</p>
 
-            <div class="info-box">
-                🎵 <strong>Remember:</strong> Music is just repeating patterns. You don't need to memorize thousands of sounds. 
-                There are exactly 12, and they repeat up and down the fretboard.
-            </div>
+      <div class="exercise-item-box">
+        <strong>Challenge:</strong> Find and play E (open), F (fret 1), G (fret 3), A (fret 5), B (fret 7), C (fret 8).
+        Just play them. Listen to each one.
+      </div>
 
-            <h2>The 12 Notes (In Order)</h2>
-            <p>Here are all 12 notes. Learn them in this order. Say them out loud as you read them:</p>
+      <button class="reveal-btn" onclick="toggleReveal('ex2', this)">Show solution</button>
+      <div class="reveal-answer" id="ex2">
+        <strong>On the Low E String:</strong>
+        <ul>
+          <li><strong>Fret 0 (Open):</strong> E</li>
+          <li><strong>Fret 1:</strong> F</li>
+          <li><strong>Fret 2:</strong> F# (bonus — good to know)</li>
+          <li><strong>Fret 3:</strong> G</li>
+          <li><strong>Fret 5:</strong> A</li>
+          <li><strong>Fret 7:</strong> B</li>
+          <li><strong>Fret 8:</strong> C</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 0.5rem; margin: 1.5rem 0;">
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">C</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">C#</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">D</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">D#</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">E</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">F</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">F#</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">G</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">G#</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">A</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">A#</div>
-                <div style="background: #667eea; color: white; padding: 1rem; border-radius: 8px; text-align: center; font-weight: 700; font-size: 1.2rem;">B</div>
-            </div>
+  <!-- KEY TAKEAWAYS -->
+  <div class="content-block" data-aos="fade-up">
+    <h2 class="content-h2">Key Takeaways</h2>
+    <div class="def-list">
+      <div class="def-item">
+        <span class="def-term">✅ 12 Notes</span>
+        <span class="def-desc">All of music uses exactly 12 different notes — that's it.</span>
+      </div>
+      <div class="def-item">
+        <span class="def-term">✅ The Order</span>
+        <span class="def-desc">C – C# – D – D# – E – F – F# – G – G# – A – A# – B – (repeat)</span>
+      </div>
+      <div class="def-item">
+        <span class="def-term">✅ Every String</span>
+        <span class="def-desc">The same 12-note pattern repeats on all 6 strings. Learn one, know all six.</span>
+      </div>
+      <div class="def-item">
+        <span class="def-term">✅ Sharp = +1 fret</span>
+        <span class="def-desc">C# is literally one fret higher than C. Simple as that.</span>
+      </div>
+      <div class="def-item">
+        <span class="def-term">✅ No E# or B#</span>
+        <span class="def-desc">E and B don't have sharps. Memorize this quirk early.</span>
+      </div>
+    </div>
+  </div>
 
-            <div class="warning-box">
-                ⚠️ <strong>The # (Pound/Sharp) Symbol:</strong> C# (C-sharp) is just the note between C and D. It's not a different note, 
-                it's the same note played slightly higher. When you see #, just say "sharp." So C# = "C sharp."
-            </div>
+  <!-- WHAT'S NEXT -->
+  <div class="content-block" data-aos="fade-up">
+    <h2 class="content-h2">What's Next?</h2>
+    <p class="content-p">
+      In Module 2, you'll learn how these 12 notes are arranged across your entire fretboard — all 6 strings, all 12+ frets. Once you see the full map, finding any note anywhere becomes a pattern problem, not a memorization problem.
+    </p>
+  </div>
 
-            <h2>Why These 12?</h2>
-            <p>
-                The 12 notes exist because of how human ears work. Our ears naturally perceive sound in a pattern that repeats 
-                every 12 steps. This pattern is called an <strong>octave</strong>. When you play the same note higher or lower, 
-                it's still the same note—just in a different octave.
-            </p>
+  <!-- LESSON NAV -->
+  <div class="lesson-nav" data-aos="fade-up">
+    <a href="lessons.html" class="disabled">← Back to Lessons</a>
+    <a href="lessons.html">Next: The Fretboard Map →</a>
+  </div>
 
-            <p>
-                Think of it like this: C, C#, D, D#, E, F, F#, G, G#, A, A#, B... then C again (but higher). 
-                The pattern just repeats forever up and down your instrument.
-            </p>
+</div>
 
-            <h2>How to Remember Them</h2>
-            <p>
-                Here's the easiest way to memorize the 12 notes:
-            </p>
-            <div style="background: #f5f5f5; padding: 1.5rem; border-radius: 8px; margin: 1rem 0;">
-                <p style="margin-bottom: 0.5rem;"><strong>White Notes (No #):</strong></p>
-                <p style="font-family: monospace; font-size: 1.1rem; margin-bottom: 1rem;"><strong>C  D  E  F  G  A  B</strong></p>
-                
-                <p style="margin-bottom: 0.5rem;"><strong>Black Notes (With #):</strong></p>
-                <p style="font-family: monospace; font-size: 1.1rem;">
-                    <strong>C#  D#  —  F#  G#  A#  —</strong><br>
-                    <span style="font-size: 0.9rem; color: #666;">(No E# or B#—they're just E and B!)</span>
-                </p>
-            </div>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">🎸 Guitar Theory <span>Bootcamp</span></div>
+    <p class="footer-text">Learn music theory. Master your instrument. &copy; 2024</p>
+  </div>
+</footer>
 
-            <h2>On Your Guitar</h2>
-            <p>
-                Here's what's amazing about guitar: <strong>The same pattern of 12 notes repeats on every string.</strong>
-                Once you learn it on one string, you know it on all six.
-            </p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  window.addEventListener('scroll', () => {
+    const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById('scroll-progress').style.width = scrolled + '%';
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
+  });
 
-            <div class="diagram">
-                <h3 style="color: #667eea; margin-bottom: 1rem;">The First 12 Frets on One String</h3>
-                <div class="fretboard" style="text-align: left;">
-                    <pre>Fret:  0    1    2    3    4    5    6    7    8    9    10   11   12
-Note:  C    C#   D    D#   E    F    F#   G    G#   A    A#   B    C
-       |____|____|____|____|____|____|____|____|____|____|____|____|</pre>
-                </div>
-                <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">
-                    This pattern is the same on all 6 strings! The only difference is which note you start on.
-                </p>
-            </div>
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('navLinks').classList.toggle('open');
+  });
 
-            <h2>What About Flats (♭)?</h2>
-            <p>
-                You might have heard of "flats" (the ♭ symbol). Here's the good news: <strong>A flat is the same as a sharp.</strong>
-            </p>
+  AOS.init({ duration: 650, once: true, offset: 50 });
 
-            <p>
-                For example:
-            </p>
-            <ul style="margin: 1rem 0; margin-left: 2rem;">
-                <li>C# (C sharp) = Db (D flat) — they're the same note</li>
-                <li>D# (D sharp) = Eb (E flat) — they're the same note</li>
-            </ul>
+  gsap.from('#pageTitle', { y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.2 });
 
-            <p>
-                For now, just focus on sharps (#). We'll explain why there are two names for the same note later 
-                (it has to do with how we write music).
-            </p>
+  function toggleReveal(id, btn) {
+    const el = document.getElementById(id);
+    const isShowing = el.classList.toggle('show');
+    btn.textContent = isShowing ? 'Hide' : btn.dataset.label;
+  }
 
-            <div class="success-box">
-                ✅ <strong>Quick Win:</strong> You now know that all of music uses just 12 notes. 
-                You're already ahead of 99% of beginner musicians. Seriously.
-            </div>
-
-            <h2>Practice: Say the Notes</h2>
-            <div class="exercise-section">
-                <h4>Exercise 1: Memorize the Order</h4>
-                <p style="margin-bottom: 1rem;">
-                    Here's your first practice. Say these out loud, three times, every day for the next week:
-                </p>
-
-                <div class="exercise-item">
-                    <strong>The Full Cycle:</strong>
-                    <p style="font-family: monospace; font-size: 1.1rem; margin-top: 0.5rem; color: #667eea;">
-                        C - C# - D - D# - E - F - F# - G - G# - A - A# - B - C
-                    </p>
-                </div>
-
-                <p style="margin-top: 1rem; color: #666;">
-                    That's it. Say it like a song (it actually has a rhythm). After a few days, you'll have it memorized.
-                </p>
-
-                <button class="show-answer-btn" onclick="toggleAnswer('ex1')">Show Practice Tips</button>
-                <div class="answer" id="ex1">
-                    <p><strong>Tips to make this stick:</strong></p>
-                    <ul style="margin: 0; padding-left: 1.5rem;">
-                        <li>Say it out loud (not in your head)</li>
-                        <li>Say it at the same speed each time</li>
-                        <li>Do it first thing in the morning, before bed, and after practice</li>
-                        <li>After 3 days, try saying it backwards (B to C)</li>
-                        <li>By day 7, you should know it cold</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="exercise-section">
-                <h4>Exercise 2: Find Notes on Your Guitar</h4>
-                <p style="margin-bottom: 1rem;">
-                    Take your guitar and find these notes on the low E string (the thickest string):
-                </p>
-
-                <div class="exercise-item">
-                    <strong>Challenge:</strong> Find and play: E (open), F (fret 1), G (fret 3), A (fret 5), B (fret 7), C (fret 8)
-                </div>
-
-                <p style="margin-top: 1rem; color: #666;">
-                    Just play them. Listen to each one. Get comfortable with how they sound and where they are.
-                </p>
-
-                <button class="show-answer-btn" onclick="toggleAnswer('ex2')">Show Solution</button>
-                <div class="answer" id="ex2">
-                    <p><strong>On the Low E String:</strong></p>
-                    <ul style="margin: 0; padding-left: 1.5rem;">
-                        <li><strong>Fret 0 (Open):</strong> E ✓</li>
-                        <li><strong>Fret 1:</strong> F ✓</li>
-                        <li><strong>Fret 2:</strong> F# (not asked, but good to know)</li>
-                        <li><strong>Fret 3:</strong> G ✓</li>
-                        <li><strong>Fret 5:</strong> A ✓</li>
-                        <li><strong>Fret 7:</strong> B ✓</li>
-                        <li><strong>Fret 8:</strong> C ✓</li>
-                    </ul>
-                </div>
-            </div>
-
-            <h2>Key Takeaways</h2>
-            <ul style="margin: 1rem 0 1rem 2rem;">
-                <li>✅ There are <strong>only 12 notes</strong> in all of music</li>
-                <li>✅ They always go in the same order: C - C# - D - D# - E - F - F# - G - G# - A - A# - B - (repeat)</li>
-                <li>✅ The pattern <strong>repeats on every string</strong> on your guitar</li>
-                <li>✅ Sharp (#) means "one fret higher"</li>
-                <li>✅ You don't have to memorize thousands of notes—just 12 that repeat</li>
-            </ul>
-
-            <h2>What's Next?</h2>
-            <p>
-                In the next lesson, you'll learn how the 12 notes are arranged on your entire fretboard. 
-                You'll see that once you know the pattern on one string, finding notes on any string becomes easy.
-            </p>
-
-            <div class="lesson-nav">
-                <a href="lessons.html" class="disabled">← Back to Lessons</a>
-                <a href="lesson-2.html">Next: The Fretboard Map →</a>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Guitar Theory Bootcamp. Learn music theory. Master your instrument. 🎸</p>
-    </footer>
-
-    <script>
-        function toggleAnswer(id) {
-            const answer = document.getElementById(id);
-            answer.classList.toggle('show');
-            
-            const button = event.target;
-            if (answer.classList.contains('show')) {
-                button.textContent = 'Hide';
-            } else {
-                button.textContent = 'Show Practice Tips';
-            }
-        }
-    </script>
+  document.querySelectorAll('.reveal-btn').forEach(btn => {
+    btn.dataset.label = btn.textContent;
+  });
+</script>
 </body>
 </html>

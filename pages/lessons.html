@@ -1,129 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lessons - Guitar Theory Bootcamp</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lessons — Guitar Theory Bootcamp</title>
+  <meta name="description" content="7 core music theory modules for guitarists. Work through them in order over four weeks.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <h1 class="logo">🎸 Guitar Theory Bootcamp</h1>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="lessons.html" class="active">Lessons</a></li>
-                <li><a href="practice.html">Exercises</a></li>
-                <li><a href="reference.html">Reference</a></li>
-            </ul>
-        </div>
-    </nav>
 
-    <main class="lesson-container">
-        <div class="lesson-header">
-            <h1>Music Theory Lessons</h1>
-            <p class="lesson-meta">7 Core Concepts • 4 Weeks to Mastery</p>
-        </div>
+<div id="scroll-progress"></div>
 
-        <div class="grid" style="max-width: 1000px; margin: 2rem auto;">
-            <!-- Week 1 -->
-            <div class="card">
-                <h3>📍 Module 1: The 12 Notes</h3>
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                    <strong>Week 1 • 20 min</strong>
-                </p>
-                <p>Learn the 12 notes of the musical alphabet. Understand that music only has 12 different sounds that repeat. See where each note lives on your guitar.</p>
-                <a href="lesson-1.html" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 4px; transition: all 0.3s;">
-                    Start Lesson →
-                </a>
-            </div>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="../index.html" class="logo">
+      <span class="logo-icon">🎸</span>
+      <span class="logo-text">Guitar Theory <span class="logo-accent">Bootcamp</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="lessons.html" class="active">Lessons</a></li>
+      <li><a href="practice.html">Exercises</a></li>
+      <li><a href="reference.html">Reference</a></li>
+      <li><a href="lesson-1.html" class="nav-cta">Start Learning</a></li>
+    </ul>
+  </div>
+</nav>
 
-            <div class="card">
-                <h3>🗺️ Module 2: The Fretboard Map</h3>
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                    <strong>Week 1 • 25 min</strong>
-                </p>
-                <p>Your guitar fretboard is just a map of the 12 notes. Learn the pattern and how to identify any note instantly. Practice finding notes on every string.</p>
-                <a href="lesson-2.html" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 4px; transition: all 0.3s;">
-                    Start Lesson →
-                </a>
-            </div>
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-meta">
+      <span class="meta-chip chip-week">📚 7 Modules</span>
+      <span class="meta-chip chip-time">⏱ 4 Weeks</span>
+    </div>
+    <h1 class="page-title" id="pageTitle">Music Theory<br><span class="gradient-text">Lessons</span></h1>
+    <p class="page-description">Work through the modules in order. Each one builds on the last. Most take 20–40 minutes to read and another 15 to practice.</p>
+  </div>
+</div>
 
-            <div class="card">
-                <h3>📏 Module 3: Intervals (Distance Between Notes)</h3>
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                    <strong>Week 2 • 30 min</strong>
-                </p>
-                <p>Learn how to measure the distance between two notes. Intervals are the building blocks of scales and chords. They're simpler than you think.</p>
-                <a href="lesson-3.html" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 4px; transition: all 0.3s;">
-                    Start Lesson →
-                </a>
-            </div>
+<!-- LESSONS GRID -->
+<div class="lessons-grid">
 
-            <div class="card">
-                <h3>🎼 Module 4: Major & Minor Scales</h3>
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                    <strong>Week 2 • 35 min</strong>
-                </p>
-                <p>Scales are just ordered lists of notes. Learn the major scale (happy) and minor scale (sad) patterns. Every song is built from these.</p>
-                <a href="lesson-4.html" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 4px; transition: all 0.3s;">
-                    Start Lesson →
-                </a>
-            </div>
+  <a href="lesson-1.html" class="lesson-card" data-aos="fade-up" data-aos-delay="0">
+    <div class="lesson-card-header">
+      <span class="lesson-card-icon">🎵</span>
+      <span class="lesson-card-num">Module 01</span>
+    </div>
+    <div>
+      <span class="week-badge badge-purple">Week 1</span>
+      <h3 class="lesson-card-title">The 12 Notes</h3>
+    </div>
+    <p class="lesson-card-desc">There are only 12 different notes in all of music. Learn them, understand why, and see where they live on your guitar.</p>
+    <div class="lesson-card-footer">
+      <span class="lesson-duration">⏱ 20 min · Easy</span>
+      <div class="lesson-arrow">→</div>
+    </div>
+  </a>
 
-            <div class="card">
-                <h3>🎵 Module 5: Chord Theory Basics</h3>
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                    <strong>Week 3 • 30 min</strong>
-                </p>
-                <p>Chords are just stacked intervals. Learn how to build major and minor chords from scratch. Understand why certain chords sound good together.</p>
-                <a href="lesson-5.html" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 4px; transition: all 0.3s;">
-                    Start Lesson →
-                </a>
-            </div>
+  <div class="lesson-card" style="opacity:0.55; cursor:default;" data-aos="fade-up" data-aos-delay="50">
+    <div class="lesson-card-header">
+      <span class="lesson-card-icon">🗺️</span>
+      <span class="lesson-card-num">Module 02</span>
+    </div>
+    <div>
+      <span class="week-badge badge-purple">Week 1</span>
+      <h3 class="lesson-card-title">The Fretboard Map</h3>
+    </div>
+    <p class="lesson-card-desc">Your fretboard is just a map of the 12 notes. Learn the pattern and identify any note on any string instantly.</p>
+    <div class="lesson-card-footer">
+      <span class="lesson-duration">⏱ 25 min · Easy</span>
+      <div class="lesson-arrow" style="opacity:0.4;">→</div>
+    </div>
+  </div>
 
-            <div class="card">
-                <h3>🔄 Module 6: Chord Progressions</h3>
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                    <strong>Week 3 • 25 min</strong>
-                </p>
-                <p>Learn which chords naturally follow other chords. Understand why I-IV-V-I sounds so satisfying. Analyze any song's harmony.</p>
-                <a href="lesson-6.html" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 4px; transition: all 0.3s;">
-                    Start Lesson →
-                </a>
-            </div>
+  <div class="lesson-card" style="opacity:0.55; cursor:default;" data-aos="fade-up" data-aos-delay="100">
+    <div class="lesson-card-header">
+      <span class="lesson-card-icon">📏</span>
+      <span class="lesson-card-num">Module 03</span>
+    </div>
+    <div>
+      <span class="week-badge badge-amber">Week 2</span>
+      <h3 class="lesson-card-title">Intervals</h3>
+    </div>
+    <p class="lesson-card-desc">Measure the distance between two notes. Intervals are the building blocks of every scale and chord — simpler than you think.</p>
+    <div class="lesson-card-footer">
+      <span class="lesson-duration">⏱ 30 min · Medium</span>
+      <div class="lesson-arrow" style="opacity:0.4;">→</div>
+    </div>
+  </div>
 
-            <div class="card">
-                <h3>📖 Module 7: Reading Music & Song Analysis</h3>
-                <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">
-                    <strong>Week 4 • 40 min</strong>
-                </p>
-                <p>Learn to read basic sheet music and chord charts. Analyze a real song step-by-step. Put it all together and understand how music works.</p>
-                <a href="lesson-7.html" style="display: inline-block; margin-top: 1rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; text-decoration: none; border-radius: 4px; transition: all 0.3s;">
-                    Start Lesson →
-                </a>
-            </div>
-        </div>
+  <div class="lesson-card" style="opacity:0.55; cursor:default;" data-aos="fade-up" data-aos-delay="150">
+    <div class="lesson-card-header">
+      <span class="lesson-card-icon">🎼</span>
+      <span class="lesson-card-num">Module 04</span>
+    </div>
+    <div>
+      <span class="week-badge badge-amber">Week 2</span>
+      <h3 class="lesson-card-title">Major & Minor Scales</h3>
+    </div>
+    <p class="lesson-card-desc">Scales are ordered lists of notes. Learn the major (happy) and minor (sad) patterns — every song is built from these.</p>
+    <div class="lesson-card-footer">
+      <span class="lesson-duration">⏱ 35 min · Medium</span>
+      <div class="lesson-arrow" style="opacity:0.4;">→</div>
+    </div>
+  </div>
 
-        <section class="info-section" style="margin-top: 2rem; padding-top: 0;">
-            <div class="container">
-                <h2>How to Use These Lessons</h2>
-                <div style="max-width: 800px; margin: 0 auto; background: #f5f5f5; padding: 2rem; border-radius: 8px; line-height: 1.8;">
-                    <ol style="margin: 0; padding-left: 1.5rem;">
-                        <li style="margin-bottom: 1rem;"><strong>Read the lesson</strong> — Each takes 20-40 minutes. Read it all the way through.</li>
-                        <li style="margin-bottom: 1rem;"><strong>Look at the examples</strong> — We show real guitar examples for everything.</li>
-                        <li style="margin-bottom: 1rem;"><strong>Do the practice exercises</strong> — Most lessons have exercises built in. Try them before looking at answers.</li>
-                        <li style="margin-bottom: 1rem;"><strong>Take notes</strong> — Write down things that confuse you.</li>
-                        <li style="margin-bottom: 1rem;"><strong>Come back to the Reference tab</strong> — When you're confused, look things up there.</li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-    </main>
+  <div class="lesson-card" style="opacity:0.55; cursor:default;" data-aos="fade-up" data-aos-delay="0">
+    <div class="lesson-card-header">
+      <span class="lesson-card-icon">🎵</span>
+      <span class="lesson-card-num">Module 05</span>
+    </div>
+    <div>
+      <span class="week-badge badge-cyan">Week 3</span>
+      <h3 class="lesson-card-title">Chord Theory</h3>
+    </div>
+    <p class="lesson-card-desc">Chords are stacked intervals. Build major and minor chords from scratch and understand why certain chords sound good together.</p>
+    <div class="lesson-card-footer">
+      <span class="lesson-duration">⏱ 30 min · Medium</span>
+      <div class="lesson-arrow" style="opacity:0.4;">→</div>
+    </div>
+  </div>
 
-    <footer>
-        <p>&copy; 2024 Guitar Theory Bootcamp. Learn music theory. Master your instrument. 🎸</p>
-    </footer>
+  <div class="lesson-card" style="opacity:0.55; cursor:default;" data-aos="fade-up" data-aos-delay="50">
+    <div class="lesson-card-header">
+      <span class="lesson-card-icon">🔄</span>
+      <span class="lesson-card-num">Module 06</span>
+    </div>
+    <div>
+      <span class="week-badge badge-cyan">Week 3</span>
+      <h3 class="lesson-card-title">Chord Progressions</h3>
+    </div>
+    <p class="lesson-card-desc">Learn which chords naturally follow each other. Understand why I–IV–V–I sounds so satisfying. Analyze any song's harmony.</p>
+    <div class="lesson-card-footer">
+      <span class="lesson-duration">⏱ 25 min · Medium</span>
+      <div class="lesson-arrow" style="opacity:0.4;">→</div>
+    </div>
+  </div>
+
+  <div class="lesson-card" style="opacity:0.55; cursor:default;" data-aos="fade-up" data-aos-delay="100">
+    <div class="lesson-card-header">
+      <span class="lesson-card-icon">📖</span>
+      <span class="lesson-card-num">Module 07</span>
+    </div>
+    <div>
+      <span class="week-badge badge-green">Week 4</span>
+      <h3 class="lesson-card-title">Reading Music & Song Analysis</h3>
+    </div>
+    <p class="lesson-card-desc">Read basic sheet music and chord charts. Analyze a real song step-by-step. Put everything together and understand how music works.</p>
+    <div class="lesson-card-footer">
+      <span class="lesson-duration">⏱ 40 min · Advanced</span>
+      <div class="lesson-arrow" style="opacity:0.4;">→</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- HOW TO USE -->
+<section class="how-to-section">
+  <div class="container">
+    <div class="section-header center" data-aos="fade-up">
+      <span class="section-label">Getting Started</span>
+      <h2 class="section-title" style="font-size: 2rem;">How to use these lessons</h2>
+    </div>
+
+    <div class="how-to-grid">
+      <div class="how-to-item" data-aos="fade-up" data-aos-delay="0">
+        <div class="how-to-num">1</div>
+        <div class="how-to-text"><strong>Read it through</strong> Each lesson takes 20–40 min. Read the whole thing before touching your guitar.</div>
+      </div>
+      <div class="how-to-item" data-aos="fade-up" data-aos-delay="80">
+        <div class="how-to-num">2</div>
+        <div class="how-to-text"><strong>Study the examples</strong> Every concept has a real guitar example. See it on the fretboard.</div>
+      </div>
+      <div class="how-to-item" data-aos="fade-up" data-aos-delay="160">
+        <div class="how-to-num">3</div>
+        <div class="how-to-text"><strong>Do the exercises</strong> Try them before revealing answers. That struggle is where learning happens.</div>
+      </div>
+      <div class="how-to-item" data-aos="fade-up" data-aos-delay="240">
+        <div class="how-to-num">4</div>
+        <div class="how-to-text"><strong>Use the reference</strong> Forgot something? The Reference tab has everything in one place.</div>
+      </div>
+      <div class="how-to-item" data-aos="fade-up" data-aos-delay="320">
+        <div class="how-to-num">5</div>
+        <div class="how-to-text"><strong>Don't skip ahead</strong> Each module builds on the last. Trust the order.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">🎸 Guitar Theory <span>Bootcamp</span></div>
+    <p class="footer-text">Learn music theory. Master your instrument. &copy; 2024</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  window.addEventListener('scroll', () => {
+    const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
+    document.getElementById('scroll-progress').style.width = scrolled + '%';
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
+  });
+
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  AOS.init({ duration: 650, once: true, offset: 50 });
+
+  gsap.from('#pageTitle', { y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.2 });
+</script>
 </body>
 </html>

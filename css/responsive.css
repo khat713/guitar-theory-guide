@@ -1,113 +1,160 @@
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 1024px) {
+  .features-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .timeline::before { left: 26px; }
+
+  .timeline-item {
+    grid-template-columns: 52px 1fr;
+    gap: 1.25rem;
+  }
+
+  .timeline-empty { display: none; }
+
+  .timeline-center {
+    justify-content: flex-start;
+  }
+
+  .timeline-marker {
+    width: 52px; height: 52px;
+    font-size: 0.7rem;
+  }
+
+  .timeline-item:nth-child(even) .timeline-content:first-child { order: unset; }
+  .timeline-item:nth-child(even) .timeline-center { order: unset; }
+
+  .learn-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 768px) {
-    /* Navigation */
-    .nav-links {
-        gap: 1rem;
-        font-size: 0.9rem;
-    }
+  /* Nav */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: rgba(6,6,14,0.97);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--border);
+  }
 
-    /* Hero Section */
-    .hero-content h2 {
-        font-size: 1.8rem;
-    }
+  .nav-links.open { display: flex; }
 
-    .subtitle {
-        font-size: 1rem;
-    }
+  .nav-links li { width: 100%; }
 
-    .quick-stats {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
+  .nav-links a {
+    display: block;
+    padding: 0.85rem 2rem;
+    border-radius: 0;
+  }
 
-    /* Grid */
-    .grid {
-        grid-template-columns: 1fr;
-    }
+  .nav-links a::after { display: none; }
 
-    /* Timeline */
-    .timeline::before {
-        left: 20px;
-    }
+  .nav-cta {
+    margin: 0.5rem 2rem !important;
+    display: block !important;
+    border-radius: var(--radius-xl) !important;
+    text-align: center;
+  }
 
-    .timeline-marker {
-        left: 20px;
-        width: 40px;
-        height: 40px;
-        font-size: 0.9rem;
-    }
+  .nav-toggle { display: flex; }
 
-    .timeline-item:nth-child(odd) .timeline-content,
-    .timeline-item:nth-child(even) .timeline-content {
-        width: 100%;
-        margin-left: 70px;
-        margin-right: 0;
-        text-align: left;
-    }
+  .navbar { position: fixed; }
 
-    /* Lesson */
-    .lesson-container {
-        padding: 0 15px;
-    }
+  /* Hero */
+  .hero { padding: 7rem 1.5rem 4rem; }
 
-    .lesson-header h1 {
-        font-size: 1.5rem;
-    }
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+  }
 
-    .lesson-content {
-        padding: 1rem;
-    }
+  .stat-card { padding: 1rem 0.5rem; }
 
-    /* Practice */
-    .practice-container {
-        padding: 0 15px;
-    }
+  .stat-number { font-size: 1.6rem; }
 
-    .lesson-nav {
-        flex-direction: column;
-    }
+  .hero-actions { flex-direction: column; align-items: center; }
 
-    .lesson-nav a {
-        width: 100%;
-    }
+  .hero-actions .btn { width: 100%; max-width: 300px; justify-content: center; }
+
+  /* Sections */
+  .section { padding: 4rem 0; }
+
+  .learn-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Timeline */
+  .timeline::before { left: 22px; }
+
+  .timeline-item {
+    grid-template-columns: 44px 1fr;
+    gap: 1rem;
+  }
+
+  .timeline-marker { width: 44px; height: 44px; font-size: 0.65rem; }
+
+  /* Lessons */
+  .lessons-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem 4rem;
+  }
+
+  /* Lesson body */
+  .lesson-body { padding: 0 1.5rem 4rem; }
+
+  .page-hero { padding: 7rem 1.5rem 3rem; }
+
+  .lesson-nav { flex-direction: column; }
+
+  /* Reference */
+  .ref-section { padding: 0 1.5rem 4rem; }
+
+  .roman-grid { grid-template-columns: repeat(4, 1fr); }
+
+  .chord-formula { grid-template-columns: 1fr; }
+
+  /* Practice */
+  .schedule-grid { grid-template-columns: 1fr 1fr; }
+
+  /* How to */
+  .how-to-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Footer */
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
-    .nav-links {
-        gap: 0.5rem;
-        font-size: 0.8rem;
-    }
+  .hero-stats { grid-template-columns: 1fr; max-width: 220px; margin-left: auto; margin-right: auto; }
 
-    .logo {
-        font-size: 1.2rem;
-    }
+  .hero-title { font-size: 2.2rem; }
 
-    .hero-content h2 {
-        font-size: 1.4rem;
-    }
+  .section-title { font-size: 1.8rem; }
 
-    .stat-box h3 {
-        font-size: 1.5rem;
-    }
+  .page-title { font-size: 1.8rem; }
 
-    .info-section h2,
-    .features-section h2,
-    .timeline-section h2 {
-        font-size: 1.5rem;
-    }
+  .roman-grid { grid-template-columns: repeat(3, 1fr); }
 
-    .card {
-        padding: 1rem;
-    }
+  .schedule-grid { grid-template-columns: 1fr; }
 
-    .card h3 {
-        font-size: 1.1rem;
-    }
+  .how-to-grid { grid-template-columns: 1fr; }
 
-    .quiz-item {
-        padding: 1rem;
-    }
+  .container { padding: 0 1.25rem; }
 
-    .quiz-option {
-        padding: 0.5rem;
-    }
+  .note-grid { grid-template-columns: repeat(4, 1fr); }
+
+  .features-visual { display: none; }
 }
