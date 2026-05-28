@@ -1,0 +1,23 @@
+# OS Files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Node/npm
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Sass
+.sass-cache/
+*.css.map
+
+# Local env
+.env
+.env.local
+
+# Backups
+*.backup
+*.bak
+*~

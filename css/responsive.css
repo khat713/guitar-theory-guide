@@ -1,0 +1,113 @@
+@media (max-width: 768px) {
+    /* Navigation */
+    .nav-links {
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    /* Hero Section */
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .quick-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Grid */
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Timeline */
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-marker {
+        left: 20px;
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .timeline-item:nth-child(odd) .timeline-content,
+    .timeline-item:nth-child(even) .timeline-content {
+        width: 100%;
+        margin-left: 70px;
+        margin-right: 0;
+        text-align: left;
+    }
+
+    /* Lesson */
+    .lesson-container {
+        padding: 0 15px;
+    }
+
+    .lesson-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .lesson-content {
+        padding: 1rem;
+    }
+
+    /* Practice */
+    .practice-container {
+        padding: 0 15px;
+    }
+
+    .lesson-nav {
+        flex-direction: column;
+    }
+
+    .lesson-nav a {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .stat-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .info-section h2,
+    .features-section h2,
+    .timeline-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .card h3 {
+        font-size: 1.1rem;
+    }
+
+    .quiz-item {
+        padding: 1rem;
+    }
+
+    .quiz-option {
+        padding: 0.5rem;
+    }
+}
