@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Module 4: Major and Minor Scales — Guitar Theory Bootcamp</title>
+  <meta name="description" content="Learn the major and minor scale formulas, build C major and A minor from scratch, and understand how scales connect to everything you play.">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+<div id="progress"></div>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-mark">🎸</div>
+      Guitar Theory Bootcamp
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="lessons.html" class="active">Lessons</a></li>
+      <li><a href="practice.html">Exercises</a></li>
+      <li><a href="reference.html">Reference</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="page-hero-inner">
+    <div class="page-chips">
+      <span class="chip chip-accent">Week 2</span>
+      <span class="chip chip-neutral">35 min</span>
+      <span class="chip chip-green">Medium</span>
+    </div>
+    <h1 class="page-title" id="pageTitle">MODULE 4<br><span class="accent-word">MAJOR AND MINOR SCALES</span></h1>
+    <p class="page-lede">A scale is an ordered set of notes following a specific interval pattern. Two formulas — major and minor — generate the backbone of nearly every song you'll ever play.</p>
+  </div>
+</div>
+
+<div class="lesson-layout">
+
+  <div class="content-section">
+    <h2 class="content-h2">What Is a Scale?</h2>
+    <p class="content-p">
+      A scale is a selection of notes from the 12 available, arranged in a specific order defined by an <strong>interval pattern</strong>. That pattern tells you exactly how many frets to move between each note. Choose a starting note, apply the pattern, and you have a complete scale.
+    </p>
+    <p class="content-p">
+      Scales matter because every song is built inside a <strong>key</strong>, and every key is defined by its scale. When you know the scale for a key, you know which notes to use for melodies, which chords to build, and why certain combinations sound good together.
+    </p>
+    <div class="callout callout-info">
+      <span class="callout-icon">💡</span>
+      <div>You don't memorize individual note locations for every key. You memorize <strong>one formula per scale type</strong>, then apply it to any starting note. That's the leverage point.</div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="content-h2">Intervals: Whole Steps and Half Steps</h2>
+    <p class="content-p">
+      Scale formulas are written using two building blocks: the <strong>whole step</strong> (W) and the <strong>half step</strong> (H).
+    </p>
+
+    <table class="def-table">
+      <tr>
+        <td>H — Half Step</td>
+        <td>Move 1 fret. The smallest interval on guitar. E to F is a half step. B to C is a half step.</td>
+      </tr>
+      <tr>
+        <td>W — Whole Step</td>
+        <td>Move 2 frets. Two half steps combined. C to D is a whole step. A to B is a whole step.</td>
+      </tr>
+    </table>
+
+    <p class="content-p">
+      Every scale formula is just a sequence of W's and H's. Read the formula left to right and jump that many frets from each note to find the next one.
+    </p>
+  </div>
+
+  <div class="content-section">
+    <h2 class="content-h2">The Major Scale Formula</h2>
+    <p class="content-p">
+      The major scale has a bright, resolved sound. Most "happy" melodies and common chord progressions come from it. There is only one formula, and it works from any starting note:
+    </p>
+
+    <div class="formula-block">
+      W &nbsp;–&nbsp; W &nbsp;–&nbsp; H &nbsp;–&nbsp; W &nbsp;–&nbsp; W &nbsp;–&nbsp; W &nbsp;–&nbsp; H
+      <small>Root → +2 → +2 → +1 → +2 → +2 → +2 → +1 = octave</small>
+    </div>
+
+    <p class="content-p">
+      Seven intervals, eight notes (counting the root again at the top). The total adds up to 12 half steps — exactly one octave.
+    </p>
+  </div>
+
+  <div class="content-section">
+    <h2 class="content-h2">Building C Major Step by Step</h2>
+    <p class="content-p">
+      Start on C and apply the formula. At each step, count forward through the 12-note sequence by the number of frets indicated.
+    </p>
+
+    <table class="def-table">
+      <tr><td>C</td><td>Root — starting note</td></tr>
+      <tr><td>W → D</td><td>2 frets up from C lands on D</td></tr>
+      <tr><td>W → E</td><td>2 frets up from D lands on E</td></tr>
+      <tr><td>H → F</td><td>1 fret up from E lands on F (remember: E to F is always a half step)</td></tr>
+      <tr><td>W → G</td><td>2 frets up from F lands on G</td></tr>
+      <tr><td>W → A</td><td>2 frets up from G lands on A</td></tr>
+      <tr><td>W → B</td><td>2 frets up from A lands on B</td></tr>
+      <tr><td>H → C</td><td>1 fret up from B lands back on C (B to C is always a half step)</td></tr>
+    </table>
+
+    <div class="note-display-grid">
+      <div class="note-cell natural">C</div>
+      <div class="note-cell natural">D</div>
+      <div class="note-cell natural">E</div>
+      <div class="note-cell natural">F</div>
+      <div class="note-cell natural">G</div>
+      <div class="note-cell natural">A</div>
+      <div class="note-cell natural">B</div>
+      <div class="note-cell natural">C</div>
+    </div>
+
+    <div class="callout callout-success">
+      <span class="callout-icon">✓</span>
+      <div><strong>C major is all white keys.</strong> No sharps, no flats. This is why music theory often starts here — the formula is easiest to see without accidentals getting in the way.</div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="content-h2">C Major on Guitar</h2>
+    <p class="content-p">
+      You can play the C major scale as a single-string run starting from C on fret 8 of the low E string. The fret numbers follow directly from the interval formula.
+    </p>
+
+    <div class="fretboard-block">
+      <pre>
+Low E:  8 — 10 — 12 — 13 — 15 — 17 — 19 — 20
+Note:   C    D    E    F    G    A    B    C
+        |    W    W    H    W    W    W    H  |
+      </pre>
+      <p class="fretboard-caption">C major scale on the low E string — fret 8 to fret 20 — one octave</p>
+    </div>
+
+    <p class="content-p">
+      Play it slowly. Listen for the familiar "Do Re Mi" sound — that's the major scale. The H gaps (frets 12→13 and 19→20) are the narrow steps that give the major scale its characteristic lift.
+    </p>
+    <div class="callout callout-info">
+      <span class="callout-icon">💡</span>
+      <div><strong>Moveable shapes.</strong> This exact fret-distance pattern works starting from any note on any string. Shift the whole run up 2 frets and you have D major. That's why scale formulas are so powerful on guitar.</div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="content-h2">The Natural Minor Scale Formula</h2>
+    <p class="content-p">
+      The natural minor scale has a darker, more serious sound. It's the foundation for minor keys, blues-influenced rock, and most "sad" or "emotional" melodies. The formula rearranges the same building blocks as major — different order, different mood:
+    </p>
+
+    <div class="formula-block">
+      W &nbsp;–&nbsp; H &nbsp;–&nbsp; W &nbsp;–&nbsp; W &nbsp;–&nbsp; H &nbsp;–&nbsp; W &nbsp;–&nbsp; W
+      <small>Root → +2 → +1 → +2 → +2 → +1 → +2 → +2 = octave</small>
+    </div>
+
+    <p class="content-p">
+      Notice the H steps have shifted positions. The critical change: there's an H on step 2 instead of step 3, which pulls the third note down a half step. That lowered third is what creates the minor sound.
+    </p>
+  </div>
+
+  <div class="content-section">
+    <h2 class="content-h2">Building A Minor Step by Step</h2>
+    <p class="content-p">
+      Start on A and apply the minor formula:
+    </p>
+
+    <table class="def-table">
+      <tr><td>A</td><td>Root — starting note</td></tr>
+      <tr><td>W → B</td><td>2 frets up from A lands on B</td></tr>
+      <tr><td>H → C</td><td>1 fret up from B lands on C (B to C is a half step)</td></tr>
+      <tr><td>W → D</td><td>2 frets up from C lands on D</td></tr>
+      <tr><td>W → E</td><td>2 frets up from D lands on E</td></tr>
+      <tr><td>H → F</td><td>1 fret up from E lands on F (E to F is a half step)</td></tr>
+      <tr><td>W → G</td><td>2 frets up from F lands on G</td></tr>
+      <tr><td>W → A</td><td>2 frets up from G lands back on A</td></tr>
+    </table>
+
+    <div class="note-display-grid">
+      <div class="note-cell natural">A</div>
+      <div class="note-cell natural">B</div>
+      <div class="note-cell natural">C</div>
+      <div class="note-cell natural">D</div>
+      <div class="note-cell natural">E</div>
+      <div class="note-cell natural">F</div>
+      <div class="note-cell natural">G</div>
+      <div class="note-cell natural">A</div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="content-h2">A Minor on Guitar</h2>
+    <p class="content-p">
+      A minor is particularly convenient to play because it starts on the open A string (fret 0). You don't need to shift up the neck at all.
+    </p>
+
+    <div class="fretboard-block">
+      <pre>
+A str:  0 — 2 — 3 — 5 — 7 — 8 — 10 — 12
+Note:   A   B   C   D   E   F   G    A
+        |   W   H   W   W   H   W    W  |
+      </pre>
+      <p class="fretboard-caption">A minor scale on the A string — open to fret 12 — one octave</p>
+    </div>
+
+    <p class="content-p">
+      Play this back to back with the C major run. Listen carefully. You'll hear a different emotional color — lower, darker, unresolved — even though both are simple ascending runs.
+    </p>
+  </div>
+
+  <div class="content-section">
+    <h2 class="content-h2">The Relative Major/Minor Relationship</h2>
+    <p class="content-p">
+      Compare the two scales you just built:
+    </p>
+
+    <table class="def-table">
+      <tr><td>C major</td><td>C &nbsp; D &nbsp; E &nbsp; F &nbsp; G &nbsp; A &nbsp; B</td></tr>
+      <tr><td>A minor</td><td>A &nbsp; B &nbsp; C &nbsp; D &nbsp; E &nbsp; F &nbsp; G</td></tr>
+    </table>
+
+    <p class="content-p">
+      They contain <strong>exactly the same seven notes</strong>. The only difference is where you start. C major starts on C; A minor starts on A — the sixth note of the C major scale.
+    </p>
+    <p class="content-p">
+      This is called the <strong>relative minor</strong> relationship. Every major scale has a relative minor that shares its notes, starting on scale degree 6. Every minor scale has a relative major starting on scale degree 3.
+    </p>
+
+    <div class="callout callout-warning">
+      <span class="callout-icon">⚠</span>
+      <div><strong>Same notes, different feel.</strong> The mood shift — major bright vs. minor dark — comes entirely from which note you treat as home. Start and end on C: major. Start and end on A: minor. The notes haven't changed.</div>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <h2 class="content-h2">Why This Matters in Practice</h2>
+    <p class="content-p">
+      When someone says a song is "in the key of G major," they mean: the notes of the G major scale are the palette for that song. Melodies use those notes. Chords are built from those notes. When you play lead guitar, those are the notes that sound right.
+    </p>
+    <p class="content-p">
+      When a guitarist learns a scale pattern on the fretboard, they're learning the <strong>shape</strong> of a scale — a fingering pattern that can be moved up or down the neck to any key. Learn the C major shape starting at fret 8, then shift it to fret 10 and you're playing D major. The shape is the same; the key changes with position.
+    </p>
+    <div class="callout callout-info">
+      <span class="callout-icon">💡</span>
+      <div><strong>Tabs and lead playing.</strong> When you see a guitarist noodle over a chord progression, they're navigating a scale pattern. The scale defines which notes are available. Everything else is phrasing and feel.</div>
+    </div>
+  </div>
+
+  <!-- EXERCISES -->
+  <div class="content-section">
+    <h2 class="content-h2">Practice</h2>
+
+    <div class="exercise">
+      <h3 class="exercise-title">Exercise 1: Build G Major from the Formula</h3>
+      <p class="content-p" style="font-size: 0.9rem;">Using the major scale formula W–W–H–W–W–W–H, build the G major scale starting from G. Write out each step before revealing the answer.</p>
+
+      <div class="exercise-box">
+        <strong>Major formula:</strong> W – W – H – W – W – W – H<br>
+        <strong>Starting note:</strong> G<br><br>
+        Apply each interval in order. Remember: W = 2 frets, H = 1 fret through the chromatic sequence: G – G# – A – A# – B – C – C# – D – D# – E – F – F# – G
+      </div>
+
+      <button class="reveal-btn" onclick="toggleReveal('ex1', this)" data-closed="Show answer" data-open="Hide answer">Show answer</button>
+      <div class="reveal-content" id="ex1">
+        <strong>G major scale — step by step:</strong>
+        <ul>
+          <li>G — root</li>
+          <li>W → A (2 frets up: G → G# → A)</li>
+          <li>W → B (2 frets up: A → A# → B)</li>
+          <li>H → C (1 fret up: B → C)</li>
+          <li>W → D (2 frets up: C → C# → D)</li>
+          <li>W → E (2 frets up: D → D# → E)</li>
+          <li>W → F# (2 frets up: E → F → F#) — note the sharp!</li>
+          <li>H → G (1 fret up: F# → G)</li>
+        </ul>
+        <strong>Result: G &nbsp; A &nbsp; B &nbsp; C &nbsp; D &nbsp; E &nbsp; F# &nbsp; G</strong><br><br>
+        G major has one sharp: F#. Every time you apply the major formula starting from a note other than C, you'll end up with at least one sharp or flat to keep the pattern consistent.
+      </div>
+    </div>
+
+    <div class="exercise">
+      <h3 class="exercise-title">Exercise 2: Find the Relative Minor of G Major</h3>
+      <p class="content-p" style="font-size: 0.9rem;">The relative minor starts on the 6th degree of the major scale. Count up through G major to find it, then write out the resulting minor scale.</p>
+
+      <div class="exercise-box">
+        <strong>G major degrees:</strong><br>
+        1=G &nbsp; 2=A &nbsp; 3=B &nbsp; 4=C &nbsp; 5=D &nbsp; 6=? &nbsp; 7=F#<br><br>
+        What is the 6th degree? What scale does it produce?
+      </div>
+
+      <button class="reveal-btn" onclick="toggleReveal('ex2', this)" data-closed="Show answer" data-open="Hide answer">Show answer</button>
+      <div class="reveal-content" id="ex2">
+        <strong>The 6th degree of G major is E.</strong><br><br>
+        E minor is the relative minor of G major. They share the same seven notes, just starting from a different place:<br><br>
+        <strong>E minor: E &nbsp; F# &nbsp; G &nbsp; A &nbsp; B &nbsp; C &nbsp; D &nbsp; E</strong><br><br>
+        Verify with the minor formula W–H–W–W–H–W–W:<br>
+        <ul>
+          <li>E — root</li>
+          <li>W → F# (2 frets up)</li>
+          <li>H → G (1 fret up)</li>
+          <li>W → A (2 frets up)</li>
+          <li>W → B (2 frets up)</li>
+          <li>H → C (1 fret up)</li>
+          <li>W → D (2 frets up)</li>
+          <li>W → E (2 frets up)</li>
+        </ul>
+        Identical notes to G major. Songs that sound major (resolved, bright) and songs that sound minor (dark, emotional) can share the same underlying note set — the difference is where the musical gravity points.
+      </div>
+    </div>
+  </div>
+
+  <!-- TAKEAWAYS -->
+  <div class="content-section">
+    <h2 class="content-h2">Key Takeaways</h2>
+    <table class="def-table">
+      <tr><td>Major formula</td><td>W–W–H–W–W–W–H — bright, resolved sound</td></tr>
+      <tr><td>Minor formula</td><td>W–H–W–W–H–W–W — darker, more serious sound</td></tr>
+      <tr><td>C major</td><td>C D E F G A B — all natural notes, no sharps</td></tr>
+      <tr><td>A minor</td><td>A B C D E F G — same notes as C major</td></tr>
+      <tr><td>Relative minor</td><td>Starts on degree 6 of any major scale; shares all the same notes</td></tr>
+      <tr><td>Moveable shapes</td><td>The fret-distance pattern works from any starting position on any string</td></tr>
+    </table>
+  </div>
+
+  <div class="content-section">
+    <h2 class="content-h2">What's Next</h2>
+    <p class="content-p">Module 5 uses what you just learned to build chords from the ground up. Chords are constructed by stacking specific intervals on a root note — and those intervals come directly from the scale. Once you see how chords are derived, chord shapes stop being arbitrary hand positions and start being note relationships you understand.</p>
+  </div>
+
+  <div class="lesson-nav">
+    <a href="lesson-3.html">← Prev: Intervals</a>
+    <a href="lesson-5.html">Next: Chord Theory →</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">Guitar Theory <span>Bootcamp</span></span>
+    <span class="footer-copy">Learn music theory. Master your instrument. &copy; 2024</span>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script>
+  window.addEventListener('scroll', () => {
+    const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+    document.getElementById('progress').style.width = pct + '%';
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  document.getElementById('navToggle').addEventListener('click', function() {
+    this.classList.toggle('open');
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  gsap.from('#pageTitle', { y: 40, opacity: 0, duration: 0.8, ease: 'power4.out', delay: 0.15 });
+
+  function toggleReveal(id, btn) {
+    const el = document.getElementById(id);
+    const open = el.classList.toggle('open');
+    btn.textContent = open ? btn.dataset.open : btn.dataset.closed;
+  }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.style.opacity = '1';
+        e.target.style.transform = 'translateY(0)';
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.content-section').forEach((s, i) => {
+    s.style.opacity = '0';
+    s.style.transform = 'translateY(20px)';
+    s.style.transition = `opacity 0.5s cubic-bezier(0.22,1,0.36,1) ${i * 0.04}s, transform 0.5s cubic-bezier(0.22,1,0.36,1) ${i * 0.04}s`;
+    io.observe(s);
+  });
+</script>
+</body>
+</html>
