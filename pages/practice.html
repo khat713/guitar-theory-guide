@@ -4,9 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Practice Exercises: Guitar Theory Bootcamp</title>
-  <meta name="description" content="50+ questions to test your music theory knowledge. Try before you peek.">
+  <meta name="description" content="Practice exercises for all 7 modules. Jump straight to the exercises inside each lesson.">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
+  <style>
+    .module-hub {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .hub-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      border: 2px solid oklch(88% 0.02 70);
+      border-radius: 10px;
+      padding: 1.5rem 1.5rem 1.25rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s var(--ease-out-quint), transform 0.2s var(--ease-out-quint), box-shadow 0.2s var(--ease-out-quint);
+    }
+    .hub-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px oklch(58% 0.21 38 / 0.12);
+    }
+    .hub-card-num {
+      font-family: var(--display);
+      font-weight: 900;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .hub-card-title {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 1.25rem;
+      line-height: 1.2;
+      color: var(--text);
+      margin-bottom: 0.75rem;
+    }
+    .hub-card-meta {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .hub-card-cta {
+      margin-top: auto;
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .hub-card-cta::after {
+      content: '→';
+      transition: transform 0.2s var(--ease-out-quint);
+    }
+    .hub-card:hover .hub-card-cta::after {
+      transform: translateX(4px);
+    }
+  </style>
 </head>
 <body>
 
@@ -33,11 +99,11 @@
 <div class="page-hero">
   <div class="page-hero-inner">
     <div class="page-chips">
-      <span class="chip chip-accent">50+ Questions</span>
-      <span class="chip chip-neutral">All Modules</span>
+      <span class="chip chip-accent">7 Modules</span>
+      <span class="chip chip-neutral">All Exercises</span>
     </div>
     <h1 class="page-title" id="pageTitle">PRACTICE<br><span class="accent-word">EXERCISES</span></h1>
-    <p class="page-lede">Time to put your brain to work! Try to answer each question before peeking. Getting one wrong is how you learn. No stress!</p>
+    <p class="page-lede">Pick a module and jump straight to its exercises. Try every question before peeking. Getting one wrong is how you actually learn.</p>
   </div>
 </div>
 
@@ -48,111 +114,88 @@
     <div class="callout callout-info">
       <span class="callout-icon">→</span>
       <div>
-        Read the question and think of your answer first. Then hit "Reveal." Got it wrong? Go back to the lesson and find out <em>why</em>. That's where the real learning happens!
+        Read the question. Think of your answer first, then click "Reveal." Got it wrong? Go back to the lesson and find out <em>why</em>. That is where the real learning happens!
       </div>
     </div>
   </div>
 
   <div class="content-section">
-    <h2 class="content-h2">Module 1: The 12 Notes</h2>
+    <h2 class="content-h2">Jump to a Module</h2>
+    <p class="content-p">Each card links directly to the exercises inside that lesson.</p>
 
-    <div class="quiz-list">
+    <div class="module-hub">
 
-      <div class="quiz-item">
-        <p class="quiz-q">Q1: What are the 12 notes of music? Write them in order, starting from C.</p>
-        <button class="reveal-btn" onclick="toggleQuiz('q1', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
-        <div class="quiz-answer" id="q1">
-          <strong>Answer</strong>
-          <p>C, C#, D, D#, E, F, F#, G, G#, A, A#, B</p>
-          <p style="margin-top: 0.5rem; font-size: 0.82rem; color: var(--text-3);">These 12 notes are the building blocks of all music. Memorize this list; it's the most important thing in the whole course!</p>
+      <a href="lesson-1.html#practice" class="hub-card">
+        <div class="hub-card-num">Module 1</div>
+        <div class="hub-card-title">The 12 Notes</div>
+        <div class="hub-card-meta">
+          <span class="chip chip-neutral">Week 1</span>
+          <span class="chip chip-neutral">Easy</span>
         </div>
-      </div>
+        <div class="hub-card-cta">Go to exercises</div>
+      </a>
 
-      <div class="quiz-item">
-        <p class="quiz-q">Q2: What does the # (sharp) symbol mean in practical terms on a guitar?</p>
-        <button class="reveal-btn" onclick="toggleQuiz('q2', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
-        <div class="quiz-answer" id="q2">
-          <strong>Answer</strong>
-          <p>One fret higher. C# is one fret above C on any string.</p>
+      <a href="lesson-2.html#practice" class="hub-card">
+        <div class="hub-card-num">Module 2</div>
+        <div class="hub-card-title">The Fretboard Map</div>
+        <div class="hub-card-meta">
+          <span class="chip chip-neutral">Week 1</span>
+          <span class="chip chip-neutral">Easy</span>
         </div>
-      </div>
+        <div class="hub-card-cta">Go to exercises</div>
+      </a>
 
-      <div class="quiz-item">
-        <p class="quiz-q">Q3: How many notes are between one C and the next C, counting the first C but not the last?</p>
-        <button class="reveal-btn" onclick="toggleQuiz('q3', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
-        <div class="quiz-answer" id="q3">
-          <strong>Answer: 12 notes</strong>
-          <p>C C# D D# E F F# G G# A A# B = 12 notes. This 12-note span is one octave.</p>
+      <a href="lesson-3.html#practice" class="hub-card">
+        <div class="hub-card-num">Module 3</div>
+        <div class="hub-card-title">Intervals</div>
+        <div class="hub-card-meta">
+          <span class="chip chip-neutral">Week 2</span>
+          <span class="chip chip-accent">Medium</span>
         </div>
-      </div>
+        <div class="hub-card-cta">Go to exercises</div>
+      </a>
 
-      <div class="quiz-item">
-        <p class="quiz-q">Q4: On the low E string, E is the open string (fret 0). What fret is F?</p>
-        <button class="reveal-btn" onclick="toggleQuiz('q4', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
-        <div class="quiz-answer" id="q4">
-          <strong>Answer: Fret 1</strong>
-          <p>F is one semitone above E, which is one fret. E (0) → F (1).</p>
+      <a href="lesson-4.html#practice" class="hub-card">
+        <div class="hub-card-num">Module 4</div>
+        <div class="hub-card-title">Major and Minor Scales</div>
+        <div class="hub-card-meta">
+          <span class="chip chip-neutral">Week 2</span>
+          <span class="chip chip-accent">Medium</span>
         </div>
-      </div>
+        <div class="hub-card-cta">Go to exercises</div>
+      </a>
 
-      <div class="quiz-item">
-        <p class="quiz-q">Q5: What note is on fret 3 of the low E string?</p>
-        <button class="reveal-btn" onclick="toggleQuiz('q5', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
-        <div class="quiz-answer" id="q5">
-          <strong>Answer: G</strong>
-          <p>Count up from E: E(0) → F(1) → F#(2) → G(3).</p>
+      <a href="lesson-5.html#practice" class="hub-card">
+        <div class="hub-card-num">Module 5</div>
+        <div class="hub-card-title">Chord Theory</div>
+        <div class="hub-card-meta">
+          <span class="chip chip-neutral">Week 3</span>
+          <span class="chip chip-accent">Medium</span>
         </div>
-      </div>
+        <div class="hub-card-cta">Go to exercises</div>
+      </a>
 
-      <div class="quiz-item">
-        <p class="quiz-q">Q6: True or false: the 12-note pattern repeats on every string of the guitar.</p>
-        <button class="reveal-btn" onclick="toggleQuiz('q6', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
-        <div class="quiz-answer" id="q6">
-          <strong>Answer: True</strong>
-          <p>Same pattern on all 6 strings. Only the starting note (open string) differs.</p>
+      <a href="lesson-6.html#practice" class="hub-card">
+        <div class="hub-card-num">Module 6</div>
+        <div class="hub-card-title">Chord Progressions</div>
+        <div class="hub-card-meta">
+          <span class="chip chip-neutral">Week 3</span>
+          <span class="chip chip-accent">Medium</span>
         </div>
-      </div>
+        <div class="hub-card-cta">Go to exercises</div>
+      </a>
 
-      <div class="quiz-item">
-        <p class="quiz-q">Q7: Are C# and D♭ the same note or different notes?</p>
-        <button class="reveal-btn" onclick="toggleQuiz('q7', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
-        <div class="quiz-answer" id="q7">
-          <strong>Answer: Same note</strong>
-          <p>They are enharmonic equivalents: two different names for the same physical pitch and fret.</p>
+      <a href="lesson-7.html#practice" class="hub-card">
+        <div class="hub-card-num">Module 7</div>
+        <div class="hub-card-title">Reading Music and Song Analysis</div>
+        <div class="hub-card-meta">
+          <span class="chip chip-neutral">Week 4</span>
+          <span class="chip chip-accent">Advanced</span>
         </div>
-      </div>
+        <div class="hub-card-cta">Go to final assessment</div>
+      </a>
 
     </div>
-  </div>
-
-  <!-- READINESS CHECK -->
-  <div class="content-section">
-    <h2 class="content-h2">Module 1 Readiness Check</h2>
-    <p class="content-p" style="font-size: 0.9rem;">Check every box before moving to Module 2. If you can't yet, spend one more day on the lesson. You've got this!</p>
-
-    <div class="checklist">
-      <div class="check-row">
-        <input type="checkbox" id="c1">
-        <label for="c1">I can say all 12 notes in order without thinking</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" id="c2">
-        <label for="c2">I understand that # means one fret higher</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" id="c3">
-        <label for="c3">I can find any note on the low E string</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" id="c4">
-        <label for="c4">I know the 12-note pattern repeats on every string</label>
-      </div>
-      <div class="check-row">
-        <input type="checkbox" id="c5">
-        <label for="c5">I answered 5+ questions correctly without help</label>
-      </div>
-    </div>
-    <div class="readiness-msg" id="readyMsg">All checked. Move to Module 2.</div>
   </div>
 
   <!-- PRACTICE SCHEDULE -->
@@ -180,7 +223,7 @@
 
   <div class="lesson-nav">
     <a href="lessons.html">Back to Lessons</a>
-    <a href="lesson-1.html">Open Module 1 →</a>
+    <a href="lesson-1.html">Start Module 1 →</a>
   </div>
 
 </div>
@@ -206,18 +249,6 @@
   });
 
   gsap.from('#pageTitle', { y: 40, opacity: 0, duration: 0.8, ease: 'power4.out', delay: 0.15 });
-
-  function toggleQuiz(id, btn) {
-    const el = document.getElementById(id);
-    const open = el.classList.toggle('open');
-    btn.textContent = open ? btn.dataset.open : btn.dataset.closed;
-  }
-
-  const boxes = document.querySelectorAll('.check-row input[type=checkbox]');
-  const msg = document.getElementById('readyMsg');
-  boxes.forEach(b => b.addEventListener('change', () => {
-    msg.style.display = [...boxes].every(x => x.checked) ? 'block' : 'none';
-  }));
 </script>
 </body>
 </html>
