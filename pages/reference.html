@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quick Reference — Guitar Theory Bootcamp</title>
-  <meta name="description" content="Every guitar theory concept in one place. Look it up fast.">
+  <meta name="description" content="Every guitar theory concept in one place. Bookmark it.">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
 
-<div id="scroll-progress"></div>
+<div id="progress"></div>
 
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="../index.html" class="logo">
-      <span class="logo-icon">🎸</span>
-      <span class="logo-text">Guitar Theory <span class="logo-accent">Bootcamp</span></span>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-mark">🎸</div>
+      Guitar Theory Bootcamp
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
@@ -31,277 +30,177 @@
   </div>
 </nav>
 
-<!-- PAGE HERO -->
 <div class="page-hero">
   <div class="page-hero-inner">
-    <div class="page-meta">
-      <span class="meta-chip chip-week">📖 Quick Lookup</span>
+    <div class="page-chips">
+      <span class="chip chip-accent">Quick Lookup</span>
+      <span class="chip chip-neutral">Bookmark this page</span>
     </div>
-    <h1 class="page-title" id="pageTitle">Quick<br><span class="gradient-text">Reference</span></h1>
-    <p class="page-description">Everything you need, in one place. Bookmark this page and come back whenever something isn't clicking.</p>
+    <h1 class="page-title" id="pageTitle">QUICK<br><span class="accent-word">REFERENCE</span></h1>
+    <p class="page-lede">Everything you need in one place. Come back here whenever something isn't clicking.</p>
   </div>
 </div>
 
-<div class="ref-section">
+<div class="ref-body">
 
   <!-- THE 12 NOTES -->
-  <h2 data-aos="fade-up">The 12 Notes</h2>
-  <div class="note-grid" data-aos="fade-up">
-    <div class="note-pill">C</div>
-    <div class="note-pill sharp">C#</div>
-    <div class="note-pill">D</div>
-    <div class="note-pill sharp">D#</div>
-    <div class="note-pill">E</div>
-    <div class="note-pill">F</div>
-    <div class="note-pill sharp">F#</div>
-    <div class="note-pill">G</div>
-    <div class="note-pill sharp">G#</div>
-    <div class="note-pill">A</div>
-    <div class="note-pill sharp">A#</div>
-    <div class="note-pill">B</div>
+  <h2 class="ref-h2">The 12 Notes (Chromatic Scale)</h2>
+
+  <div class="note-display-grid" style="grid-template-columns: repeat(6,1fr);">
+    <div class="note-cell natural">C</div>
+    <div class="note-cell sharp">C#</div>
+    <div class="note-cell natural">D</div>
+    <div class="note-cell sharp">D#</div>
+    <div class="note-cell natural">E</div>
+    <div class="note-cell natural">F</div>
+    <div class="note-cell sharp">F#</div>
+    <div class="note-cell natural">G</div>
+    <div class="note-cell sharp">G#</div>
+    <div class="note-cell natural">A</div>
+    <div class="note-cell sharp">A#</div>
+    <div class="note-cell natural">B</div>
   </div>
-  <div class="fretboard-wrap" style="margin-top: 1rem;" data-aos="fade-up">
+
+  <div class="fretboard-block" style="margin-top: 1rem;">
     <pre>C — C# — D — D# — E — F — F# — G — G# — A — A# — B — (repeat)</pre>
-    <p class="fretboard-label">The chromatic scale — all 12 notes in order, cycling endlessly</p>
+    <p class="fretboard-caption">The cycle repeats indefinitely up and down in pitch</p>
   </div>
 
-  <!-- KEY VOCABULARY -->
-  <h2 data-aos="fade-up">Key Vocabulary</h2>
-  <div class="def-list" data-aos="fade-up">
-    <div class="def-item">
-      <span class="def-term">Note</span>
-      <span class="def-desc">A single musical sound. There are exactly 12 different notes in Western music.</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term">Sharp (#)</span>
-      <span class="def-desc">One fret higher. C# is one fret above C. Always raises pitch by one semitone.</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term">Flat (♭)</span>
-      <span class="def-desc">One fret lower. D♭ is one fret below D. Same pitch as the sharp below it (D♭ = C#).</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term">Octave</span>
-      <span class="def-desc">The distance from one note to the same note, higher or lower. Exactly 12 semitones = 1 octave.</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term">Semitone</span>
-      <span class="def-desc">The smallest interval in Western music. On guitar = 1 fret.</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term">Whole Tone</span>
-      <span class="def-desc">Two semitones. On guitar = 2 frets.</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term">Interval</span>
-      <span class="def-desc">The distance between two notes, measured in semitones. The building block of scales and chords.</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term">Scale</span>
-      <span class="def-desc">A specific ordered sequence of notes. Major = happy, Minor = sad. Every song is built from a scale.</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term">Chord</span>
-      <span class="def-desc">Three or more notes played simultaneously. Major chords sound bright, minor chords sound dark.</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term">Tab / Tablature</span>
-      <span class="def-desc">Guitar notation showing which fret to press on which string. No music-reading required.</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term">Enharmonic</span>
-      <span class="def-desc">Two different names for the same pitch. C# and D♭ are enharmonic — same fret, different names.</span>
-    </div>
-  </div>
+  <!-- VOCABULARY -->
+  <h2 class="ref-h2">Key Vocabulary</h2>
 
-  <!-- GUITAR STRINGS -->
-  <h2 data-aos="fade-up">Guitar Strings — Standard Tuning</h2>
-  <div class="def-list" data-aos="fade-up" style="max-width: 500px;">
-    <div class="def-item">
-      <span class="def-term" style="font-family: var(--font-mono);">String 6</span>
-      <span class="def-desc">E (thickest — the one closest to your chin)</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term" style="font-family: var(--font-mono);">String 5</span>
-      <span class="def-desc">A</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term" style="font-family: var(--font-mono);">String 4</span>
-      <span class="def-desc">D</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term" style="font-family: var(--font-mono);">String 3</span>
-      <span class="def-desc">G</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term" style="font-family: var(--font-mono);">String 2</span>
-      <span class="def-desc">B</span>
-    </div>
-    <div class="def-item">
-      <span class="def-term" style="font-family: var(--font-mono);">String 1</span>
-      <span class="def-desc">E (thinnest — closest to the floor)</span>
-    </div>
-  </div>
+  <table class="def-table">
+    <tr><td>Note</td><td>A single musical sound. There are exactly 12 in Western music.</td></tr>
+    <tr><td>Sharp (#)</td><td>One fret higher. C# is one fret above C.</td></tr>
+    <tr><td>Flat (♭)</td><td>One fret lower. D♭ is one fret below D. Same pitch as C#.</td></tr>
+    <tr><td>Octave</td><td>The same note, 12 semitones higher or lower. Sounds identical but at a different pitch level.</td></tr>
+    <tr><td>Semitone</td><td>The smallest interval in Western music. On guitar: 1 fret.</td></tr>
+    <tr><td>Whole tone</td><td>Two semitones. On guitar: 2 frets.</td></tr>
+    <tr><td>Interval</td><td>The distance between two notes, measured in semitones.</td></tr>
+    <tr><td>Scale</td><td>A specific ordered sequence of notes. Major = bright. Minor = dark.</td></tr>
+    <tr><td>Chord</td><td>Three or more notes played simultaneously. Built from stacked intervals.</td></tr>
+    <tr><td>Enharmonic</td><td>Two names for the same pitch: C# and D♭ are enharmonic equivalents.</td></tr>
+    <tr><td>Tab</td><td>Guitar notation showing fret and string. No music-reading required.</td></tr>
+  </table>
+
+  <!-- OPEN STRINGS -->
+  <h2 class="ref-h2">Open Strings: Standard Tuning</h2>
+
+  <table class="def-table" style="max-width: 400px;">
+    <tr><td>String 6</td><td>E (thickest, closest to the ceiling)</td></tr>
+    <tr><td>String 5</td><td>A</td></tr>
+    <tr><td>String 4</td><td>D</td></tr>
+    <tr><td>String 3</td><td>G</td></tr>
+    <tr><td>String 2</td><td>B</td></tr>
+    <tr><td>String 1</td><td>E (thinnest, closest to the floor)</td></tr>
+  </table>
 
   <!-- FRETBOARD -->
-  <h2 data-aos="fade-up">Fretboard — First 7 Frets</h2>
-  <div class="fretboard-wrap" data-aos="fade-up" style="overflow-x: auto;">
-    <table class="string-table" style="min-width: 600px;">
+  <h2 class="ref-h2">Fretboard: First 7 Frets</h2>
+
+  <div style="overflow-x: auto;">
+    <table class="fretboard-table">
       <thead>
         <tr>
           <th>String</th>
-          <th>0 (Open)</th>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-          <th>7</th>
+          <th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>7</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><strong>6</strong> (E)</td>
-          <td>E</td><td>F</td><td>F#</td><td>G</td><td>G#</td><td>A</td><td>B</td>
-        </tr>
-        <tr>
-          <td><strong>5</strong> (A)</td>
-          <td>A</td><td>A#</td><td>B</td><td>C</td><td>C#</td><td>D</td><td>E</td>
-        </tr>
-        <tr>
-          <td><strong>4</strong> (D)</td>
-          <td>D</td><td>D#</td><td>E</td><td>F</td><td>F#</td><td>G</td><td>A</td>
-        </tr>
-        <tr>
-          <td><strong>3</strong> (G)</td>
-          <td>G</td><td>G#</td><td>A</td><td>A#</td><td>B</td><td>C</td><td>D</td>
-        </tr>
-        <tr>
-          <td><strong>2</strong> (B)</td>
-          <td>B</td><td>C</td><td>C#</td><td>D</td><td>D#</td><td>E</td><td>F#</td>
-        </tr>
-        <tr>
-          <td><strong>1</strong> (E)</td>
-          <td>E</td><td>F</td><td>F#</td><td>G</td><td>G#</td><td>A</td><td>B</td>
-        </tr>
+        <tr><td>6 (E)</td><td>E</td><td>F</td><td>F#</td><td>G</td><td>G#</td><td>A</td><td>B</td></tr>
+        <tr><td>5 (A)</td><td>A</td><td>A#</td><td>B</td><td>C</td><td>C#</td><td>D</td><td>E</td></tr>
+        <tr><td>4 (D)</td><td>D</td><td>D#</td><td>E</td><td>F</td><td>F#</td><td>G</td><td>A</td></tr>
+        <tr><td>3 (G)</td><td>G</td><td>G#</td><td>A</td><td>A#</td><td>B</td><td>C</td><td>D</td></tr>
+        <tr><td>2 (B)</td><td>B</td><td>C</td><td>C#</td><td>D</td><td>D#</td><td>E</td><td>F#</td></tr>
+        <tr><td>1 (E)</td><td>E</td><td>F</td><td>F#</td><td>G</td><td>G#</td><td>A</td><td>B</td></tr>
       </tbody>
     </table>
   </div>
 
   <!-- SCALE FORMULAS -->
-  <h2 data-aos="fade-up">Scale Formulas</h2>
-  <div data-aos="fade-up">
-    <div class="pattern-block">
-      <strong>Major Scale: &nbsp; W – W – H – W – W – W – H</strong>
-      <small>W = Whole Step (2 frets) &nbsp;|&nbsp; H = Half Step (1 fret) &nbsp;|&nbsp; Sounds happy, bright</small>
-    </div>
-    <div class="pattern-block" style="border-color: rgba(168,85,247,0.2); color: var(--purple); margin-top: 0.75rem;">
-      <strong>Natural Minor Scale: &nbsp; W – H – W – W – H – W – W</strong>
-      <small style="color: var(--text-muted);">Same notes as the major scale, but starting on a different note &nbsp;|&nbsp; Sounds sad, dark</small>
-    </div>
+  <h2 class="ref-h2">Scale Formulas</h2>
+
+  <div class="formula-block">
+    Major Scale: &nbsp; W – W – H – W – W – W – H
+    <small>W = Whole step (2 frets) &nbsp;|&nbsp; H = Half step (1 fret) &nbsp;|&nbsp; Sounds bright and resolved</small>
+  </div>
+
+  <div class="formula-block" style="border-left-color: var(--accent);">
+    Natural Minor: &nbsp; W – H – W – W – H – W – W
+    <small>Same notes as the relative major, starting 6 steps up &nbsp;|&nbsp; Sounds dark and emotional</small>
   </div>
 
   <!-- CHORD FORMULAS -->
-  <h2 data-aos="fade-up">Chord Formulas</h2>
-  <div class="chord-formula" data-aos="fade-up">
-    <div class="chord-card">
-      <div class="chord-name">Major Chord</div>
-      <div class="chord-formula-text">Root + 4 semitones + 3 semitones</div>
-      <div class="chord-example">
-        <strong>C Major:</strong> C → E (4 up) → G (3 up)<br>
-        Sounds: bright, happy, resolved
-      </div>
+  <h2 class="ref-h2">Chord Formulas</h2>
+
+  <div class="chord-grid">
+    <div class="chord-cell">
+      <div class="chord-name">Major</div>
+      <div class="chord-formula">Root + 4st + 3st</div>
+      <div class="chord-example">C major: C → E → G<br>Sounds bright, happy</div>
     </div>
-    <div class="chord-card">
-      <div class="chord-name">Minor Chord</div>
-      <div class="chord-formula-text">Root + 3 semitones + 4 semitones</div>
-      <div class="chord-example">
-        <strong>A Minor:</strong> A → C (3 up) → E (4 up)<br>
-        Sounds: dark, sad, emotional
-      </div>
+    <div class="chord-cell">
+      <div class="chord-name">Minor</div>
+      <div class="chord-formula">Root + 3st + 4st</div>
+      <div class="chord-example">A minor: A → C → E<br>Sounds dark, emotional</div>
     </div>
-    <div class="chord-card">
-      <div class="chord-name">Dominant 7th</div>
-      <div class="chord-formula-text">Root + 4 + 3 + 3 semitones</div>
-      <div class="chord-example">
-        <strong>G7:</strong> G → B → D → F<br>
-        Sounds: tense, wants to resolve
-      </div>
+    <div class="chord-cell">
+      <div class="chord-name">Dom. 7th</div>
+      <div class="chord-formula">Root + 4st + 3st + 3st</div>
+      <div class="chord-example">G7: G → B → D → F<br>Tense, wants to resolve</div>
     </div>
-    <div class="chord-card">
+    <div class="chord-cell">
       <div class="chord-name">Diminished</div>
-      <div class="chord-formula-text">Root + 3 + 3 semitones</div>
-      <div class="chord-example">
-        <strong>B°:</strong> B → D → F<br>
-        Sounds: very tense, unstable
-      </div>
+      <div class="chord-formula">Root + 3st + 3st</div>
+      <div class="chord-example">B°: B → D → F<br>Very tense, unstable</div>
     </div>
   </div>
 
-  <!-- CHORD PROGRESSIONS -->
-  <h2 data-aos="fade-up">Common Chord Progressions</h2>
-  <div class="progression-list" data-aos="fade-up">
-    <div class="progression-item">
-      <div class="prog-name">I – IV – V</div>
-      <div class="prog-desc">The most fundamental progression in Western music. Thousands of blues, rock, and country songs. Sounds complete and resolved.</div>
-    </div>
-    <div class="progression-item">
-      <div class="prog-name">I – V – vi – IV</div>
-      <div class="prog-desc">The "four-chord song" used in an enormous amount of modern pop. Catchy, circular, and emotionally balanced.</div>
-    </div>
-    <div class="progression-item">
-      <div class="prog-name">vi – IV – I – V</div>
-      <div class="prog-desc">Same four chords as above but starting on vi. Feels more melancholic and introspective.</div>
-    </div>
-    <div class="progression-item">
-      <div class="prog-name">I – IV – vi – V</div>
-      <div class="prog-desc">Common in ballads. The vi gives it emotional weight before resolving back through V.</div>
-    </div>
-    <div class="progression-item">
-      <div class="prog-name">ii – V – I</div>
-      <div class="prog-desc">The backbone of jazz harmony. The ii chord creates tension that V intensifies, then I resolves it perfectly.</div>
-    </div>
-  </div>
+  <!-- PROGRESSIONS -->
+  <h2 class="ref-h2">Common Chord Progressions</h2>
+
+  <table class="prog-table">
+    <tr>
+      <td>I – IV – V</td>
+      <td>The most fundamental progression in Western music. Blues, rock, country. Sounds complete and resolved.</td>
+    </tr>
+    <tr>
+      <td>I – V – vi – IV</td>
+      <td>The "four-chord song." An enormous proportion of modern pop. Catchy, circular, emotionally balanced.</td>
+    </tr>
+    <tr>
+      <td>vi – IV – I – V</td>
+      <td>Same four chords starting on vi. Feels more melancholic and introspective than the above.</td>
+    </tr>
+    <tr>
+      <td>I – IV – vi – V</td>
+      <td>Common in ballads. The vi adds emotional weight before resolving back through V.</td>
+    </tr>
+    <tr>
+      <td>ii – V – I</td>
+      <td>The backbone of jazz. The ii creates tension, V intensifies it, I resolves it. Hear it everywhere.</td>
+    </tr>
+  </table>
 
   <!-- ROMAN NUMERALS -->
-  <h2 data-aos="fade-up">Roman Numeral Notation (Major Key)</h2>
-  <div class="roman-grid" data-aos="fade-up">
-    <div class="roman-cell">
-      <span class="roman-numeral">I</span>
-      <div class="roman-type">Major</div>
-    </div>
-    <div class="roman-cell">
-      <span class="roman-numeral">ii</span>
-      <div class="roman-type">Minor</div>
-    </div>
-    <div class="roman-cell">
-      <span class="roman-numeral">iii</span>
-      <div class="roman-type">Minor</div>
-    </div>
-    <div class="roman-cell">
-      <span class="roman-numeral">IV</span>
-      <div class="roman-type">Major</div>
-    </div>
-    <div class="roman-cell">
-      <span class="roman-numeral">V</span>
-      <div class="roman-type">Major</div>
-    </div>
-    <div class="roman-cell">
-      <span class="roman-numeral">vi</span>
-      <div class="roman-type">Minor</div>
-    </div>
-    <div class="roman-cell">
-      <span class="roman-numeral">vii°</span>
-      <div class="roman-type">Diminished</div>
-    </div>
+  <h2 class="ref-h2">Roman Numeral Notation (Major Key)</h2>
+
+  <div class="roman-row">
+    <div class="roman-cell"><span class="roman-numeral">I</span><div class="roman-type">Major</div></div>
+    <div class="roman-cell"><span class="roman-numeral">ii</span><div class="roman-type">Minor</div></div>
+    <div class="roman-cell"><span class="roman-numeral">iii</span><div class="roman-type">Minor</div></div>
+    <div class="roman-cell"><span class="roman-numeral">IV</span><div class="roman-type">Major</div></div>
+    <div class="roman-cell"><span class="roman-numeral">V</span><div class="roman-type">Major</div></div>
+    <div class="roman-cell"><span class="roman-numeral">vi</span><div class="roman-type">Minor</div></div>
+    <div class="roman-cell"><span class="roman-numeral">vii°</span><div class="roman-type">Dim.</div></div>
   </div>
-  <p class="content-p" style="font-size: 0.85rem; margin-top: 0.75rem;">
-    Uppercase = major chord. Lowercase = minor chord. ° = diminished. This system works in <em>any</em> key.
+
+  <p class="content-p" style="margin-top: 0.75rem; font-size: 0.85rem;">
+    Uppercase = major chord. Lowercase = minor. ° = diminished. This system is key-agnostic: it works in any key.
   </p>
 
-  <!-- NAV -->
-  <div class="lesson-nav" data-aos="fade-up">
-    <a href="lessons.html">← Lessons</a>
+  <div class="lesson-nav" style="margin-top: 3rem;">
+    <a href="lessons.html">Lessons</a>
     <a href="practice.html">Practice Exercises →</a>
   </div>
 
@@ -309,28 +208,25 @@
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">🎸 Guitar Theory <span>Bootcamp</span></div>
-    <p class="footer-text">Learn music theory. Master your instrument. &copy; 2024</p>
+    <span class="footer-brand">Guitar Theory <span>Bootcamp</span></span>
+    <span class="footer-copy">Learn music theory. Master your instrument. &copy; 2024</span>
   </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   window.addEventListener('scroll', () => {
-    const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-    document.getElementById('scroll-progress').style.width = scrolled + '%';
-    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
-  });
+    const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+    document.getElementById('progress').style.width = pct + '%';
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
 
   document.getElementById('navToggle').addEventListener('click', function() {
-    this.classList.toggle('active');
+    this.classList.toggle('open');
     document.getElementById('navLinks').classList.toggle('open');
   });
 
-  AOS.init({ duration: 650, once: true, offset: 50 });
-
-  gsap.from('#pageTitle', { y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.2 });
+  gsap.from('#pageTitle', { y: 40, opacity: 0, duration: 0.8, ease: 'power4.out', delay: 0.15 });
 </script>
 </body>
 </html>

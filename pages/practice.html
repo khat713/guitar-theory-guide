@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Practice Exercises — Guitar Theory Bootcamp</title>
-  <meta name="description" content="50+ practice questions to test your music theory knowledge. Try before you peek.">
+  <meta name="description" content="50+ questions to test your music theory knowledge. Try before you peek.">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
 
-<div id="scroll-progress"></div>
+<div id="progress"></div>
 
-<nav class="navbar" id="navbar">
-  <div class="nav-container">
-    <a href="../index.html" class="logo">
-      <span class="logo-icon">🎸</span>
-      <span class="logo-text">Guitar Theory <span class="logo-accent">Bootcamp</span></span>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <div class="logo-mark">🎸</div>
+      Guitar Theory Bootcamp
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
       <span></span><span></span><span></span>
     </button>
     <ul class="nav-links" id="navLinks">
@@ -31,208 +30,194 @@
   </div>
 </nav>
 
-<!-- PAGE HERO -->
 <div class="page-hero">
   <div class="page-hero-inner">
-    <div class="page-meta">
-      <span class="meta-chip chip-week">✏️ 50+ Questions</span>
-      <span class="meta-chip chip-time">All Modules</span>
+    <div class="page-chips">
+      <span class="chip chip-accent">50+ Questions</span>
+      <span class="chip chip-neutral">All Modules</span>
     </div>
-    <h1 class="page-title" id="pageTitle">Practice<br><span class="gradient-text">Exercises</span></h1>
-    <p class="page-description">Theory only becomes real when you test it. Try each question before revealing the answer — that struggle is the whole point.</p>
+    <h1 class="page-title" id="pageTitle">PRACTICE<br><span class="accent-word">EXERCISES</span></h1>
+    <p class="page-lede">Theory only becomes real when you test it. Commit to an answer before revealing it. Wrong answers followed by understanding are worth ten easy right answers.</p>
   </div>
 </div>
 
-<div class="lesson-body">
+<div class="lesson-layout">
 
-  <!-- HOW TO PRACTICE -->
-  <div class="practice-intro" data-aos="fade-up">
-    <h3 style="color: var(--green); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem;">How to Use These Exercises</h3>
-    <div class="practice-tips">
-      <ol>
-        <li><strong>Try each question</strong> without looking at the answer first</li>
-        <li><strong>Write down your answer</strong> — or at least commit to one in your head</li>
-        <li><strong>Reveal the answer</strong> and check. Wrong? Go back to the lesson and understand WHY</li>
-        <li><strong>Move on</strong> — do all the exercises in one session if you can</li>
-      </ol>
-    </div>
-    <div class="info-box" style="margin-top: 1.25rem; margin-bottom: 0;">
-      <span>💡</span>
-      <div><strong>Pro tip:</strong> Getting something wrong and understanding why is 10× more valuable than getting it right on the first try.</div>
+  <div class="content-section">
+    <h2 class="content-h2">How to Use These</h2>
+    <div class="callout callout-info">
+      <span class="callout-icon">→</span>
+      <div>
+        Read each question. Commit to an answer in your head or on paper. Then reveal. If you got it wrong, go back to the lesson and understand <em>why</em> before moving on. That process is where the learning actually happens.
+      </div>
     </div>
   </div>
 
-  <!-- MODULE 1 QUESTIONS -->
-  <h2 class="section-heading-2" data-aos="fade-up">Module 1 — The 12 Notes</h2>
+  <div class="content-section">
+    <h2 class="content-h2">Module 1: The 12 Notes</h2>
 
-  <div class="quiz-card" data-aos="fade-up">
-    <p class="quiz-q">Q1: What are the 12 notes of music? Put them in order starting from C.</p>
-    <button class="reveal-btn" onclick="toggleQuiz('q1', this)">Reveal Answer</button>
-    <div class="quiz-answer-content" id="q1">
-      <strong>Answer</strong>
-      <p>C — C# — D — D# — E — F — F# — G — G# — A — A# — B</p>
-      <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.82rem;">These 12 notes make up the chromatic scale. Memorizing this order is one of the most important things you'll do in this entire course.</p>
-    </div>
-  </div>
+    <div class="quiz-list">
 
-  <div class="quiz-card" data-aos="fade-up">
-    <p class="quiz-q">Q2: What does the # (sharp) symbol mean?</p>
-    <button class="reveal-btn" onclick="toggleQuiz('q2', this)">Reveal Answer</button>
-    <div class="quiz-answer-content" id="q2">
-      <strong>Answer</strong>
-      <p>Sharp means "one fret higher" — or one semitone higher in pitch.</p>
-      <p style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.82rem;">When you see C#, it means the note one fret above C. On guitar: if C is fret 8, C# is fret 9.</p>
-    </div>
-  </div>
+      <div class="quiz-item">
+        <p class="quiz-q">Q1 — What are the 12 notes of music? Write them in order, starting from C.</p>
+        <button class="reveal-btn" onclick="toggleQuiz('q1', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
+        <div class="quiz-answer" id="q1">
+          <strong>Answer</strong>
+          <p>C — C# — D — D# — E — F — F# — G — G# — A — A# — B</p>
+          <p style="margin-top: 0.5rem; font-size: 0.82rem; color: var(--text-3);">These 12 notes form the chromatic scale. Memorizing this order is the single most foundational thing in this entire course.</p>
+        </div>
+      </div>
 
-  <div class="quiz-card" data-aos="fade-up">
-    <p class="quiz-q">Q3: How many notes are there between one C and the next C (counting the first C but not the second)?</p>
-    <button class="reveal-btn" onclick="toggleQuiz('q3', this)">Reveal Answer</button>
-    <div class="quiz-answer-content" id="q3">
-      <strong>Answer: 12 notes</strong>
-      <p>C – C# – D – D# – E – F – F# – G – G# – A – A# – B = 12 notes. This 12-note span is called an <em>octave</em>.</p>
-    </div>
-  </div>
+      <div class="quiz-item">
+        <p class="quiz-q">Q2 — What does the # (sharp) symbol mean in practical terms on a guitar?</p>
+        <button class="reveal-btn" onclick="toggleQuiz('q2', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
+        <div class="quiz-answer" id="q2">
+          <strong>Answer</strong>
+          <p>One fret higher. C# is one fret above C on any string.</p>
+        </div>
+      </div>
 
-  <div class="quiz-card" data-aos="fade-up">
-    <p class="quiz-q">Q4: On the low E string, E is the open string (fret 0). What fret is F on?</p>
-    <button class="reveal-btn" onclick="toggleQuiz('q4', this)">Reveal Answer</button>
-    <div class="quiz-answer-content" id="q4">
-      <strong>Answer: Fret 1</strong>
-      <p>F is one semitone above E — that's exactly one fret. So: fret 0 = E, fret 1 = F.</p>
-    </div>
-  </div>
+      <div class="quiz-item">
+        <p class="quiz-q">Q3 — How many notes are between one C and the next C, counting the first C but not the last?</p>
+        <button class="reveal-btn" onclick="toggleQuiz('q3', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
+        <div class="quiz-answer" id="q3">
+          <strong>Answer: 12 notes</strong>
+          <p>C C# D D# E F F# G G# A A# B = 12 notes. This 12-note span is one octave.</p>
+        </div>
+      </div>
 
-  <div class="quiz-card" data-aos="fade-up">
-    <p class="quiz-q">Q5: What note is on fret 3 of the low E string?</p>
-    <button class="reveal-btn" onclick="toggleQuiz('q5', this)">Reveal Answer</button>
-    <div class="quiz-answer-content" id="q5">
-      <strong>Answer: G</strong>
-      <p>Count up from E: E (0) → F (1) → F# (2) → G (3). Each fret is one step up the chromatic scale.</p>
-    </div>
-  </div>
+      <div class="quiz-item">
+        <p class="quiz-q">Q4 — On the low E string, E is the open string (fret 0). What fret is F?</p>
+        <button class="reveal-btn" onclick="toggleQuiz('q4', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
+        <div class="quiz-answer" id="q4">
+          <strong>Answer: Fret 1</strong>
+          <p>F is one semitone above E, which is one fret. E (0) → F (1).</p>
+        </div>
+      </div>
 
-  <div class="quiz-card" data-aos="fade-up">
-    <p class="quiz-q">Q6: True or False — The same 12-note pattern appears on every string of the guitar.</p>
-    <button class="reveal-btn" onclick="toggleQuiz('q6', this)">Reveal Answer</button>
-    <div class="quiz-answer-content" id="q6">
-      <strong>Answer: True</strong>
-      <p>This is one of the most important ideas in guitar theory. The chromatic sequence repeats on all 6 strings. The only difference is which note each string starts on (open string note).</p>
-    </div>
-  </div>
+      <div class="quiz-item">
+        <p class="quiz-q">Q5 — What note is on fret 3 of the low E string?</p>
+        <button class="reveal-btn" onclick="toggleQuiz('q5', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
+        <div class="quiz-answer" id="q5">
+          <strong>Answer: G</strong>
+          <p>Count up from E: E(0) → F(1) → F#(2) → G(3).</p>
+        </div>
+      </div>
 
-  <div class="quiz-card" data-aos="fade-up">
-    <p class="quiz-q">Q7: C# and D♭ — are these the same note or different notes?</p>
-    <button class="reveal-btn" onclick="toggleQuiz('q7', this)">Reveal Answer</button>
-    <div class="quiz-answer-content" id="q7">
-      <strong>Answer: Same note</strong>
-      <p>C# and D♭ are <em>enharmonic equivalents</em> — two different names for the same physical pitch. On guitar, they're the exact same fret.</p>
+      <div class="quiz-item">
+        <p class="quiz-q">Q6 — True or false: the 12-note pattern repeats on every string of the guitar.</p>
+        <button class="reveal-btn" onclick="toggleQuiz('q6', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
+        <div class="quiz-answer" id="q6">
+          <strong>Answer: True</strong>
+          <p>Same pattern on all 6 strings. Only the starting note (open string) differs.</p>
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <p class="quiz-q">Q7 — Are C# and D♭ the same note or different notes?</p>
+        <button class="reveal-btn" onclick="toggleQuiz('q7', this)" data-closed="Reveal answer" data-open="Hide answer">Reveal answer</button>
+        <div class="quiz-answer" id="q7">
+          <strong>Answer: Same note</strong>
+          <p>They are enharmonic equivalents: two different names for the same physical pitch and fret.</p>
+        </div>
+      </div>
+
     </div>
   </div>
 
   <!-- READINESS CHECK -->
-  <h2 class="section-heading-2" data-aos="fade-up">Readiness Check — Module 1</h2>
+  <div class="content-section">
+    <h2 class="content-h2">Module 1 Readiness Check</h2>
+    <p class="content-p" style="font-size: 0.9rem;">Tick every box before moving to Module 2. If you can't, spend one more day on the lesson.</p>
 
-  <div class="readiness-card" data-aos="fade-up">
-    <p class="readiness-title">Before moving to Module 2, can you check all of these?</p>
     <div class="checklist">
-      <div class="check-item">
+      <div class="check-row">
         <input type="checkbox" id="c1">
-        <label for="c1">I can say the 12 notes in order without thinking</label>
+        <label for="c1">I can say all 12 notes in order without thinking</label>
       </div>
-      <div class="check-item">
+      <div class="check-row">
         <input type="checkbox" id="c2">
-        <label for="c2">I understand that # (sharp) means "one fret higher"</label>
+        <label for="c2">I understand that # means one fret higher</label>
       </div>
-      <div class="check-item">
+      <div class="check-row">
         <input type="checkbox" id="c3">
-        <label for="c3">I can find any note on one string of my guitar</label>
+        <label for="c3">I can find any note on the low E string</label>
       </div>
-      <div class="check-item">
+      <div class="check-row">
         <input type="checkbox" id="c4">
-        <label for="c4">I understand that the same pattern repeats on every string</label>
+        <label for="c4">I know the 12-note pattern repeats on every string</label>
       </div>
-      <div class="check-item">
+      <div class="check-row">
         <input type="checkbox" id="c5">
-        <label for="c5">I can answer 5+ exercises correctly without looking at answers</label>
+        <label for="c5">I answered 5+ questions correctly without help</label>
       </div>
     </div>
-    <p id="readyMsg" style="display:none; margin-top: 1rem; color: var(--green); font-weight: 600; font-size: 0.9rem;">
-      ✅ All checked — you're ready for Module 2!
-    </p>
+    <div class="readiness-msg" id="readyMsg">All checked. Move to Module 2.</div>
   </div>
 
   <!-- PRACTICE SCHEDULE -->
-  <h2 class="section-heading-2" data-aos="fade-up">Practice Schedule</h2>
-
-  <div class="schedule-grid" data-aos="fade-up">
-    <div class="schedule-item">
-      <div class="schedule-freq">Daily</div>
-      <div class="schedule-task">10 min on exercises from the current module</div>
-    </div>
-    <div class="schedule-item">
-      <div class="schedule-freq">3× Per Week</div>
-      <div class="schedule-task">15 min reviewing notes on your actual guitar</div>
-    </div>
-    <div class="schedule-item">
-      <div class="schedule-freq">Weekly</div>
-      <div class="schedule-task">30 min working through one complete new lesson</div>
-    </div>
-    <div class="schedule-item">
-      <div class="schedule-freq">As Needed</div>
-      <div class="schedule-task">Review past lessons when you hit a wall</div>
+  <div class="content-section">
+    <h2 class="content-h2">Practice Schedule</h2>
+    <div class="schedule-grid">
+      <div class="schedule-cell">
+        <div class="sched-freq">Daily</div>
+        <div class="sched-task"><strong>10 min</strong> Exercises from the current module</div>
+      </div>
+      <div class="schedule-cell">
+        <div class="sched-freq">3x Per Week</div>
+        <div class="sched-task"><strong>15 min</strong> Notes on your actual guitar</div>
+      </div>
+      <div class="schedule-cell">
+        <div class="sched-freq">Weekly</div>
+        <div class="sched-task"><strong>30 min</strong> One complete new lesson</div>
+      </div>
+      <div class="schedule-cell">
+        <div class="sched-freq">As Needed</div>
+        <div class="sched-task"><strong>Review</strong> Past lessons when you hit a wall</div>
+      </div>
     </div>
   </div>
 
-  <!-- LESSON NAV -->
-  <div class="lesson-nav" data-aos="fade-up">
-    <a href="lessons.html">← Back to Lessons</a>
-    <a href="lesson-1.html">Start Module 1 →</a>
+  <div class="lesson-nav">
+    <a href="lessons.html">Back to Lessons</a>
+    <a href="lesson-1.html">Open Module 1 →</a>
   </div>
 
 </div>
 
 <footer>
   <div class="footer-inner">
-    <div class="footer-logo">🎸 Guitar Theory <span>Bootcamp</span></div>
-    <p class="footer-text">Learn music theory. Master your instrument. &copy; 2024</p>
+    <span class="footer-brand">Guitar Theory <span>Bootcamp</span></span>
+    <span class="footer-copy">Learn music theory. Master your instrument. &copy; 2024</span>
   </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   window.addEventListener('scroll', () => {
-    const scrolled = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
-    document.getElementById('scroll-progress').style.width = scrolled + '%';
-    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 30);
-  });
+    const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight) * 100;
+    document.getElementById('progress').style.width = pct + '%';
+    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
 
   document.getElementById('navToggle').addEventListener('click', function() {
-    this.classList.toggle('active');
+    this.classList.toggle('open');
     document.getElementById('navLinks').classList.toggle('open');
   });
 
-  AOS.init({ duration: 650, once: true, offset: 50 });
-
-  gsap.from('#pageTitle', { y: 40, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.2 });
+  gsap.from('#pageTitle', { y: 40, opacity: 0, duration: 0.8, ease: 'power4.out', delay: 0.15 });
 
   function toggleQuiz(id, btn) {
     const el = document.getElementById(id);
-    const isShowing = el.classList.toggle('show');
-    btn.textContent = isShowing ? 'Hide Answer' : 'Reveal Answer';
+    const open = el.classList.toggle('open');
+    btn.textContent = open ? btn.dataset.open : btn.dataset.closed;
   }
 
-  // Readiness checker
-  const checkboxes = document.querySelectorAll('.check-item input[type=checkbox]');
-  const readyMsg = document.getElementById('readyMsg');
-
-  checkboxes.forEach(cb => {
-    cb.addEventListener('change', () => {
-      const allChecked = [...checkboxes].every(c => c.checked);
-      readyMsg.style.display = allChecked ? 'block' : 'none';
-    });
-  });
+  const boxes = document.querySelectorAll('.check-row input[type=checkbox]');
+  const msg = document.getElementById('readyMsg');
+  boxes.forEach(b => b.addEventListener('change', () => {
+    msg.style.display = [...boxes].every(x => x.checked) ? 'block' : 'none';
+  }));
 </script>
 </body>
 </html>
